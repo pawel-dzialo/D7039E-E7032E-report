@@ -1,0 +1,33 @@
+epilepsy seizure prediction on eeg using 
+common spatial pattern and convolutional neural network:
+
+Rapporten behandlar primärt hur man ska uppnå både hög känslighet och low fale prediction 
+samtidigt samt motarbeta den data imbalans som problemet innefattar.
+Deras föreslagna metodik är CSP tillsammans med CNN som arkitektur
+för Maskin inlärningen, Medans de använder signal segmentation och recombination
+för att överkomma obalansen mellan pre ictala,ictala och interictal signaler.
+Då förhållandet mellan de pre-ictala och inter-ictala stadierna är 1:15.
+
+CSP (Common spatial pattern) användes för att extrahera feature matrix från 
+den råa datans olika frekvens band. Deta körs sedan igen deras 
+CNN ( convolutional neural network). Anledningen till deras användning av ett 
+Shallow CNN var för att undvika overfitting. De använder även en randomiserad 
+validation set för att yterligare minska chansen. De använder dock bara en 
+validation set och riskerar då hög false alarm rate, de inför därför ett Kalman 
+filter (wooohoo kalman woop woop). De är även bois och använder cross validation
+för att utvärdera om deras prediction kan användas på ny data.
+
+
+
+Epileptic seizure prediction based on EEG spikes detection of 
+ictal-preictal states
+Itaf Ben Slimen, Larbi Boubchir,Hassene Seddik
+
+Denna pratade kort om spike detection som en prediction metod. De beskriver 
+vilka karakteristiska drag en spike har, samt lägger ut en simpel algoritm 
+för klassificeringen enligt denna metod.deras succes rate är 
+92 % accuracy. De är något oklart om de använder ett nevralt nätverk i denna 
+vilket jag finner intressant. De kräver ingen pretreatment av sin data utan
+använder rå data.
+
+ 
