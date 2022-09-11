@@ -1,0 +1,44 @@
+\documentclass[a4paper,11pt]{LTU_lab_report}
+
+%If pdf version error
+%\pdfminorversion=7
+
+%To draw images and float positioning
+\usepackage{tikz}
+\usepackage{siunitx}
+\usetikzlibrary{backgrounds}
+\usepackage{float}
+\graphicspath{{./Bilder/}}
+
+%Short macros
+\def \bv {\mathbf}
+\def \lap {\mathcal{L}} %laplace sign
+\def \fou {\mathcal{F}} %Fourier Sign
+\def \newl {\hfill\vspace{5mm}} %Newline
+
+%To include subsection in table of contents
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\begin{document}
+\author{Johan Axenhag\\
+johaxe-4\\
+940327-4633}
+\date{\today}
+\title{Litteratursammanfattning}
+\maketitle
+\thispagestyle{empty} 
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Inspection of EEG signals for efficient seizure prediction}
+\textbf{https://www.sciencedirect.com/science/article/abs/pii/S0003682X2030219X}\\\\
+Beskriver olika algoritmer och deras sucess rate. I stora drag så applicerar först ett bandpass filter sen görs statistik analys på EEG signalerna och man tar fram probability density functions för olika attribut från signalerna (Amplitude,Local mean,Local variance,Local Median,Derivative) sen utifårn jämförelse med olika thresholds så görs en röstning för varje segment. Slutligen används ett moving average filter för att fina till signalen och ett slutgiltigt beslut tas utifrån något threshold. Utifrån dessa attribut och korrekt filtrering av signalen så kan man veta om man är i normal, ictal eller pre-ictal segments. (Förstår inte helt processen så läs 2.1 för djupare insikt). Intressant i denna artikel är att dom också vill skicka datan till telefonen för att t.ex kontakta nödkontakt. Dom testar vilken kommunikations metod som är bäst och kommer fram till att bluetooth är den mest lämpliga. Utöver tekniken ovan för att upptäcka vilket state vi befinner oss i så testar artikeln även k-means clustering och MLP networks. Vidare så beskriver artikeln resultat för en mängd olika filter och window sizes. Filtren som används är Savitsky Golay,Butterworth,Elliptic,FIR,Kaiser och ingen filtrering. Där man kan se att olika filter presterar bäst på olika områden prediction time, accuracy, false alarm rate osv. Men genomgående så kan ses att Butterworth och FIR presterar ganska bra i alla kategorier.\\\\
+
+Skulle säga att denna kan vara bra att skicka till foteini då den jämför ganska många olika preprocessing alternativ och att den skickar data till mobiltelefon som också är något vi är intresserade av.
+\section{Seizure prediction using EEG spatiotemporal correlation structure}
+Baserad på data från intracranial EEG så inte riktigt samma data som vi kommer kunna utvinna. (INTE KLAR MED DENNA ÄNNU) 
+\end{document}
+
