@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Den här mallen är skriven av Magnus Gustafsson (MG),
+%%% tillämpad fysik, Luleå tekniska universitet.
+%%% Den är baserad på TVM:s rapport-mall/guide i word och
+%%% Lars-Göran Westerbergs latex-mall som använts i kurserna
+%%% Ingenjörsvetenskap, och Ingenjörsvetenskap och rymdteknik.
+%%% Om du har kommentarer eller önskemål kan du kontakta MG.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                  PREAMBLE STARTS HERE                 - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%- The preamble defines the formatting of the document.
+
+% - What is written behind the percent mark is not regarded as code. In other words, we use it to comment the code.
+
+\documentclass{article}
+\usepackage[utf8]{inputenc} % - Defines what coding LaTeX uses. Use this one.
+\usepackage[swedish]{babel}
+\usepackage{graphicx} % - Package for including images in the document.
+\usepackage{amsmath}
+\usepackage{float} % För att lägga saker exakt rätt, använd taggen [H] istället för [h] eller [h!]
+\usepackage{mathtools}
+\graphicspath{ {Images/} } % - Path to where the images are located
+\usepackage{hyperref} % - Package for including hyperlinks in the document.
+\usepackage[backend=bibtex,style=numeric,bibencoding=ascii]{biblatex}
+ % - Package for the bibliography ("referenser").
+\addbibresource{references.bib} % - From where the references are taken
+\setlength\parindent{0pt} % - Tar bort indentering vid enter
+
+% - Can be good to structure the .tex file by dividing the document using commenting. For longer documents you can create separate .tex files for each section and then include these using \import(filename.tex). For the exercise in this course it is suggested that you write everything in this main.tex file. You can of course try using \import if you like. - %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -               Title and affiliation                    - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Epileptic prediction cap:\\
+\LaTeX -mall}
+
+\author{\includegraphics[width=0.6\textwidth]{images/hund.jpg} \\ \\ \\
+Author \\
+{\tt Author @student.ltu.se} \\
+\\Department of Computer Science, Electrical and Space Engineering \\ \\
+\includegraphics[width=0.2\textwidth]{images/ltu_swe.jpg}}
+% MG: Bilder på första sidan är bäst att lägga i "author"-
+% kommandot såvitt jag kan se.
+
+% Ange författare, e-post samt datum för publiceringen.
+% Titelsidan kan också innehålla en figur för att locka läsaren att läsa rapporten. Figurens innehåll måste naturligtvis vara kopplat till arbetet som beskrivs i rapporten.
+%
+% På en titel kan man ställa höga krav. Titeln skall vara klar och beskrivande och fungera som en miniatyr-sammanfattning av arbetet. Läsaren skall förstå vad rapporten handlar om genom att läsa titeln. Trots det ska titeln vara kort, 4-12 ord, och får inte innehålla några formler, förkortningar eller speciella symboler.
+%
+% En bra titel är en titel som med minsta möjliga antal ord korrekt beskriver innehållet i rapporten. Det kan ibland vara praktiskt att ha en titel och en undertitel.
+%
+% För laborationsrapporter; E-post samt laborationshandledare skall infogas.
+%
+% Byt LTU logga vid engelsk rapport.
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}% Tar bort sidnumrering, första sidan
+\pagenumbering{Roman}% Romerska siffror i sidnumreringen
+\setcounter{page}{0} % Bestämmer vad sidnumreringen starar på, på framsidan
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                  PREAMBLE ENDS HERE                   - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                      Abstract                          - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\section*{Abstract}
+\input{text/1-Abstract.tex}
+ 
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                    Table of contents                   - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\newpage
+
+% Varje ny huvudrubrik ska börja på ny sida.
+%
+% Du bör ha Innehållsförteckning som rubrik till sidan. Däremot ska inte innehållsförteckningen vara en rubrik i själva innehållsförteckningen.
+%
+% Titelsidan skall inte sidnumreras. De sidor som får ett sidprefix på respektive sida är, förord, sammanfattning, innehållsförteckning och beteckningar. Från inledning används sidnummer.
+% Sidnummer skrivs ut på respektive sida exempelvis centrerat i sidfoten. OBS sidnumrering är redan gjord i denna mall.
+
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                    Introduction                        - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{arabic}% Arabiska siffror i sidnumreringen
+\setcounter{page}{1} % Sätter sidnumreringen till 1 på denna sida
+\section{Introduction}
+\input{text/3-Introduction.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                       Theory                           - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Theory}
+\input{text/4-Theory.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                       Method                           - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Method}
+\input{text/5-Method.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                      Results                           - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Result}
+\input{text/6-Result.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                      Summary                           - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Discussion and Conclusions}
+\input{text/7-Discussion and Conclussions.tex}
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -                    Bibliography                        - %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography % - Here we say that the bibliography should be printed. The section title "References" is printed automatically.
+
+% I denna del anges de källor du använt i ditt arbete. Ange bara de viktigaste och alla
+% referenser i listan måste vara refererade till i texten. I referenslistan får det inte
+% förekomma någon referens som är ``allmänt bra att ha'' utan endast de referenser som
+% författaren själv använt. Alla referenser ska refereras till i texten.
+% OBS! använd originalreferenser. Undvik referenser till webbsidor eftersom de kan försvinna/ändras.
+% Ett av de vanligaste är att man skriver
+% författarnamnet och sedan referensens publikationsår - det s.k. Harvard systemet.
+% Exempel: ... även funnet av Charpak (1983)
+% Är det två eller flera författare brukar man skriva
+% Två författare: ... även funnet av Charpak och Öqvist (1983).
+% Flera författare: ... även funnet av Charpak et al. (1983).
+% ( et al. är latin (et alii) och betyder ``och andra'').
+% Ett annat sätt att ange en referens är att numrera referenserna i den ordning de dyker
+% upp i texten och sortera referenslistan i nummerordning.
+% Exempel: ... som Öqvist [3] har funnit, och referensen Öqvist dyker då upp som nummer tre i referenslistan.
+% En guide för referenser finns här: http://libguides.ltu.se/skrivaoreferera
+
+\end{document}
+
+
