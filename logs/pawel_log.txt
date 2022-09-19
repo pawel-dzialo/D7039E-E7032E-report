@@ -1,0 +1,53 @@
+30th august
+08-09~ meeting
+09-1130 literature study
+1300-1730 literature study
+
+1st september
+1300-1310 meeting
+1310 - 1500 literature study
+
+4th september
+2000 - 0200 working on git guide
+
+5th september
+1015 - 1145 weekly classroom meeting
+1200 - 1600 working on .seizure file parser for ML part
+
+6th september
+1100 - 1230 meeting with Johan, figuring out components we need
+
+7th september
+1300-1430 trying out the OpenBCI system
+1430-1800 setting up the environment for programming the devboard
+
+8th september
+1300-1800 setting up the environment still, got it working so played around with it a bit also.
+1900 - 0300 getting rudimentary BLE drivers going on the dev board
+
+9th september
+1400-1500 meeting with whole team and Foteini
+1500-1700 working on the BLE drivers
+
+12th september
+1015-1600 Working on a rudimentary Android app, trying to wrap my head around their BLE libs (they're not very good)
+
+13th september
+Busy with other course
+
+14th sept
+1300-1600
+Discussing and planning OpenBCI experiment with group, also trying to figure out how to work around chip shortage
+1600-1800
+Doing some more playing around with the Android libs, got basic app with SOME BLE functionality working
+
+15th sept
+Busy with other course
+
+16th sept
+815 - 1000 Doing measurements with OpenBCI
+
+19th september
+1015 - 1145 Planned lesson
+1145 - 1230 Discussing solutions for lack of components w/ group
+1300 - 1345 Trying to pick out an MCU, also working on digitizing these logs and getting them pushed.
