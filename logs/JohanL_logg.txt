@@ -1,0 +1,34 @@
+2022-08-30	Meeting whit the group and then literature study, we also had meeting whit AI department, as wel as E-mailing whit foteini
+
+2022-08-31	Meeting whit Jan, Literature study
+ 
+2022-09-01	Literature study, meeting about our findings where me and Fabian decided to try make a CNN as a first try.
+
+2022-09-02	Sat whit Fabian and looked at CNN, and discussed other relevant methods, also discussed whit Thomas gustavson about System identification methods for EEG signals.
+
+2022-09-05	classroom meeting 
+
+2022-09-06	Sat whit Fabian and set up a start for the CNN. Also done some more literature study on other supervised learning methods for classification
+
+2022-09-07	Done research about supervised learning methods, specificly regression based methods. As well as seen Johan Axenhag in a pretty lite EEG cap.
+
+2022-09-08	Done more research about supervised learning methods 
+
+2022-09-09	Initial meeting whit Foteini about colaboration.
+
+2022-09-11 	Made summarys of pappers on prediction to present to group for decision of what to send to Foteini
+
+2022-09-12	meeting whit Jan, Meeting about what pappers to send to Foteini and sent a sample of pappers to her. Gone through a short introduction to the hardware side of things
+
+2022-09-14	Sat whit the CNN code, and discussed whit pawel and Johan Ax about experiments for validation of hardware design
+
+2022-09-16	Performed the experiments whit the Hat. Made a latex template for rapport, and looked into some possible Machine learning methods.
+
+2022-09-17	worked whit Machine learning, as well as looked into some alternativ to CNN.
+
+2022-09-18	Done some more research into classifications methods, primarily decision trees, as well as looked at our CNN code
+
+2022-09-19	Sat whit Fabian whit our CNN code we now have a Neural Network that can achieve 58% accuracy. We have also disscused what to go to from here.
+
+
+
