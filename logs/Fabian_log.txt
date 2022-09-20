@@ -10,7 +10,7 @@
 
 --week 2--
 
-2022-09-05 Classroom meeting. Pawel promises to make a Python-function I got stuck at earlier.
+2022-09-05 Classroom meeting followed by a bit of casual planning. Pawel promises to make a Python-function I got stuck at earlier.
 
 2022-09-06 Working a lot with the code. Implementing Pawels function and successfully read all data and begin formatting it to fit a neural network.
 
