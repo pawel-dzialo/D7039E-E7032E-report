@@ -51,3 +51,4 @@ Busy with other course
 1015 - 1145 Planned lesson
 1145 - 1230 Discussing solutions for lack of components w/ group
 1300 - 1345 Trying to pick out an MCU, also working on digitizing these logs and getting them pushed.
+1345 - 1650 Working on the Android app.
