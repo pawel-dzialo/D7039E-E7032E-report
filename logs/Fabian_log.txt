@@ -6,7 +6,7 @@
 
 2022-09-01 Meeting with Johan, making a general game plan.
 
-2022-09-02 Held a thorough introduction to Neural networks in general CNNs in particular for Johan. Further developing the game plan and working a bit with the test environment.
+2022-09-02 Held a thorough introduction to Neural networks in general and CNNs in particular for Johan. Further developing the game plan and working a bit with the test environment.
 
 --week 2--
 
