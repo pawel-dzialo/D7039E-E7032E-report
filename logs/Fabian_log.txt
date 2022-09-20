@@ -1,0 +1,30 @@
+--week 1--
+
+2022-08-29 Course introduction
+
+2022-08-30 Inital group meeting, later a classroom meeting. I also set up a test environment in Python.
+
+2022-09-01 Meeting with Johan, making a general game plan.
+
+2022-09-02 Held a thorough introduction to Neural networks in general CNNs in particular for Johan. Further developing the game plan and working a bit with the test environment.
+
+--week 2--
+
+2022-09-05 Classroom meeting. Pawel promises to make a Python-function I got stuck at earlier.
+
+2022-09-06 Working a lot with the code. Implementing Pawels function and successfully read all data and begin formatting it to fit a neural network.
+
+2022-09-07 Testing the helmet in practice and further developing the game plan from the new knowledge gained.
+
+2022-09-09 Literature studies and meeting with Foteini.
+
+--week 3--
+
+2022-09-12 Classroom meeting and working a bit with the data formatting.
+
+Rest of the week:
+Sick and staying at home. Sporadically working on the code and reading up on old material from the AI-courses. At the end of the week I had implemented the first neural network, although it still had a few errors.
+
+--week 4--
+
+2022-09-19 Still sick. Sitting down together with Johan over voice-chat. Discussing and refining the game plan in detail, and also ironing out the bugs in the code from last week. First working neural network.
