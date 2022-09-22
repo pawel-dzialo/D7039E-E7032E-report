@@ -1,45 +1,43 @@
 -----------Week 35-----------
 
 Monday
-  Meeting with the group where it was decided for each member to think over the project that has been given and how to structure the coming work. As well in what area each member can contribute.
+  Meeting with the group where it was decided for each member to think over the project that has been given and how to structure the coming work. As well     in what area each member can contribute.
 
 Tuesday
-  Meeting with the whole lab group discussing: bottlenecks, given material, programming language, goal,
-  goals
-  functionality (communication with device and mobile, GPS location, messenger)
-  approaches (machine learning, system identification etc)
-  Literature study
-Seizures and Epilepsy: An Overview for Neuroscientists
-A neural-network-based detection of epilepsy
+  Meeting with the whole lab group discussing: bottlenecks, given material, programming language, goal, goals,
+  functionality (communication with device and mobile, GPS location, messenger) and approaches (machine learning, system identification etc)
+  Literature study: Seizures and Epilepsy: An Overview for Neuroscientists, A neural-network-based detection of epilepsy
 
 Wednesday
-Literature study - reading
-Toward accurate prediction of epileptic seizures: A review
+  Literature study, reading:
+  Toward accurate prediction of epileptic seizures: A review
 
 Thursday
-Literature study - taking notes and extracting relevant data
-Toward accurate prediction of epileptic seizures: A review
+  Literature study, taking notes and extracting relevant data:
+  Toward accurate prediction of epileptic seizures: A review
 
-Week 36
+--------------Week 36-------------------
 Thursday
-Meeting with Foetini and group
-Discussing experimental setup
+  Meeting with Foetini and group
+  Discussing experimental setup
 
 Wednesday
-Setting up a stage schedule for the pre-processing of data based on one of the read literature.
-Thursday
-Reading up on Notch filter and Butterworth filters
-Trying to get data from database to be read properly for some processing trials
+  Setting up a stage schedule for the pre-processing of data based on one of the read literature.
+  Thursday
+  Reading up on Notch filter and Butterworth filters
+  Trying to get data from database to be read properly for some processing trials
 
-Week 37
+-------------Week 37-------------------
 Sick all week, only was able to work with my other course.
-Week 38
+
+-------------Week 38-------------------
 Monday
-Project check-up in classroom
-Discussing everyone’s progress and hardware ordering problem (long delivery times)
+  Project check-up in classroom
+  Discussing everyone’s progress and hardware ordering problem (long delivery times)
 
 Tuesday
-Still trying to get the data from the database to comply.
-Uploading this log to GitHub
+  Still trying to get the data from the database to comply.
+  Uploading this log to GitHub
 
-Wednesday
+Thursday
+  
