@@ -17,6 +17,7 @@ Thursday
   Toward accurate prediction of epileptic seizures: A review
 
 --------------Week 36-------------------
+
 Thursday
   Meeting with Foetini and group
   Discussing experimental setup
@@ -28,9 +29,11 @@ Wednesday
   Trying to get data from database to be read properly for some processing trials
 
 -------------Week 37-------------------
+
 Sick all week, only was able to work with my other course.
 
 -------------Week 38-------------------
+
 Monday
   Project check-up in classroom
   Discussing everyone’s progress and hardware ordering problem (long delivery times)
@@ -43,3 +46,6 @@ Thursday
   Deciding filter frequencies (to begin with).
   Looking how to preprocess MNE data files (the one used by most EEG studies) in Python.
   Annotating good practices and functions for future use.
+  
+  
+  
