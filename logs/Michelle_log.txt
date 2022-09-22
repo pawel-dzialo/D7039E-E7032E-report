@@ -40,4 +40,6 @@ Tuesday
   Uploading this log to GitHub
 
 Thursday
-  
+  Deciding filter frequencies (to begin with).
+  Looking how to preprocess MNE data files (the one used by most EEG studies) in Python.
+  Annotating good practices and functions for future use.
