@@ -18,34 +18,39 @@ Thursday
 
 --------------Week 36-------------------
 
-Thursday
-  Meeting with Foetini and group
-  Discussing experimental setup
+Tuesday
+  Meeting with Foetini and group.
+  Discussing experimental setup.
 
 Wednesday
   Setting up a stage schedule for the pre-processing of data based on one of the read literature.
-  Thursday
-  Reading up on Notch filter and Butterworth filters
-  Trying to get data from database to be read properly for some processing trials
+
+Thursday
+  Reading up on Notch filter and Butterworth filters.
+  Trying to get data from database to be read properly for some processing trials.
 
 -------------Week 37-------------------
 
-Sick all week, only was able to work with my other course.
+Sick all week, only was able to work from home with my other course.
 
 -------------Week 38-------------------
 
 Monday
   Project check-up in classroom
-  Discussing everyone’s progress and hardware ordering problem (long delivery times)
+  Discussing everyone’s progress and hardware ordering problem (long delivery times).
 
 Tuesday
   Still trying to get the data from the database to comply.
-  Uploading this log to GitHub
+  Uploading this log to GitHub.
 
 Thursday
   Deciding filter frequencies (to begin with).
   Looking how to preprocess MNE data files (the one used by most EEG studies) in Python.
   Annotating good practices and functions for future use.
+  
+ Friday
+  Writing Python code for the preprocessing
+  Code logic that has been worked on: Import data, bandpass filtering and artifact removal.
   
   
   
