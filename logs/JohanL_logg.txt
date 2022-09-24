@@ -30,5 +30,6 @@
 
 2022-09-19	Sat whit Fabian whit our CNN code we now have a Neural Network that can achieve 58% accuracy. We have also disscused what to go to from here.
 
+2022-09-24 been working on trying to make our data set better for training, hampered by package related issues.
 
 
