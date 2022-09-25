@@ -1,16 +1,31 @@
 29/8 Introföreläsning, Möte lagt upp en grov plan och börjat delegera arbete
+
 30/8 Letat efter diverse artiklar om ämnet och börjat dela ut material att läsa igenom och sedan är planen att sammanställa en litteraturstudie
+
 1/9 Läst artiklar
+
 2/9 -||-
+
 5/9 Börjat kika på schematics på nuvarande PCB för att förstå vad som behövs och börjat leta efter linkande komponenter
+
 6/9 Möte med Pawel när vi kikat på komponenter
+
 7/9 Testat att koppla in mössan och mäta lite signaleroch börjat diskuttera hur man eventuellt kan validera våran egen produkt sedan. Samt fortsatt letat komponenter.
+
 9/9 Möte med foteine samt skickat beställning på de viktigaste komponenterna till PCBn
+
 13/9 Då komponeterna var slut så har vi suttit och försökt utforska alternativa lösningar
+
 14/9 Samma som ovan samt så la Pawel,Johan och jag upp en plan för en experiment serie som vi ska utföra för att skape en egen databas som vi eventuellt kan använda för att träna ett neuralt nätverk med men också för att kunna jämföra mot vår egen produkt sen i slutändan.
+
 15/9 Komponentjakt
+
 16/9 Utförde experiment för att skapa en data bas tänkt till validering av slugitlig produkt. Sammanstället ett Latex dokument inflr rapport skrivning.
+
 19/9 Kollade komponnenter med Pawel samt började fundera på alternativ krets och vilka komponter som skulle behövas för att minimera brusnivån.
+
 21/9 Fortsatte med kretsdesign primärt komponetsökande och läser diverse artiklar om kretsdesign gällande EEG vad som är viktigt att tänka på.
-23/9 Samma som Ovan samt började sammanställa ett dokument med info och frågar att skicka till Johan Borg
+
+23/9 Samma som Ovan samt började sammanställa ett dokument med info och frågar att skicka till Johan Borg.
+
 25/9 Mailat Johan Borg med mina ideer och frågat om hjälp med t.ex brusreducering och val av ADC för ändamålet.
