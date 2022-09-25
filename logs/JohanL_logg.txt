@@ -32,4 +32,8 @@
 
 2022-09-24 been working on trying to make our data set better for training, hampered by package related issues.
 
+2022-09-25 Continued working on data set.
+
+
+
 
