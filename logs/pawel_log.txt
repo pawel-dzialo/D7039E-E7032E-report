@@ -60,3 +60,6 @@ Busy with other course
 0815-0945 Scheduled lesson
 0945-1040 Doing readings with cap
 1040-1500 Working on Android app
+
+28th september
+1400-1940 Working on BLE drivers
