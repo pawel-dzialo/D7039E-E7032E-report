@@ -40,4 +40,4 @@
 
 2022-09-28 worked on repport and discussed spike detection whit Pawel
 
-
+2022-09-29 Reading papper on spike detection and Writing code for spike detection as a prediction algoritm.
