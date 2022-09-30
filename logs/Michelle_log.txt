@@ -52,5 +52,26 @@ Thursday
   Writing Python code for the preprocessing
   Code logic that has been worked on: Import data, bandpass filtering and artifact removal.
   
+  -------------Week 39-------------------
   
+  Monday
+    Project check-up in classroom.
+    Project meeting, discussing everyone's progress so far.
+    Neural network crew project meeting, discussing how to create a balanced dataset and data formatting for the NN.
   
+  Tuesday
+    Setting up the EEG lab environment in Matlab.
+  
+  Friday
+    Report writing. Wrote parts in "Theory" and "Method", with citations.
+    Constructed a flow-diagram that vizualizes the work flow of the project in overview.
+    Pre-meeting with project group.
+    Meeting with Fouteini.
+    After-meeting with project group.
+    
+    Saturday
+     Will try to get a trial dataset to be filtered and without major artifacts.
+  
+    -------------Week 40-------------------
+    
+    Monday
