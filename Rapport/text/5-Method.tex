@@ -3,6 +3,13 @@
 
 % Här beskrivs metoden, ofta är det lämpligt att dela upp texten i ett antal underrubriker.
 % Använd alltid högst tre rubrik-nivåer.
+
+\subsection{Signal Preprocessing}
+For the signal preprocessing a mixture of litterature studies and programming in Matlab (later C) was done. First the minimal intervention time window was choosen to be 2 min, meaning that the prototype should be able to atleast predict a seizure 2 minutes before the actual onset. This was concluded to be a small enough window to be achievable for first trials and big enough that it would actually be useful as a prediction device. Then a preictal time choice of 30 min was chosen based on the study done by Teixeira et al (2014, p. 324-336) where they found that a preictal time of 30.47 min was the most applicable average value.
+
+With the two time windows chosen a low-pass filter and a Noth filter was implemented in Matlab together with a EEG signal processing tool named "EEG lab". With this add-on the data was also denoised and the worst data artifacts was removed. Artifacts was processed with a blind source algorithm called ICA (Artifact removal of Independent Components). ICA is particualy good at identifying muscle artifacts (such as eye blinks) and has been widely used in EEG (J Newman, 2020-21).
+The data was then translated into a format that could be easily handled by the neural network. Specifically this meant creating a processed dataset that could be read as 23x23 images with a binary label component.
+
 \subsection{Dataset}
 For training purposes the CHB-MIT dataset was used. This dataset was recorded at the Boston children hospital on $22$ patient of ages $1.5 - 19$. The dataset was published the $9th$ of june $2010$. The dataset is split into $23$ cases (one for each patient except $2$ that were for the same patient) numbered as chb$1$ to chb$23$. A case contains between $9$ and $42$ files containing roughly $23$ EEG signals, whit a resolution of $16$-bit these were sampled at a rate of $256$ samples per second.
 
