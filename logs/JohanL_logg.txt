@@ -43,3 +43,5 @@
 2022-09-29 Reading papper on spike detection and Writing code for spike detection as a prediction algoritm.
 
 2022-09-30 preparing for and having meeting whit Foteini, and arguing whit CNN
+
+2022-09-03 workin all day on spike detection algoritm whit Pawel, promosing results, note to self check notepad for further ideas.
