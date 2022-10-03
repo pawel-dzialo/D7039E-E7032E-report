@@ -29,3 +29,15 @@
 23/9 Samma som Ovan samt började sammanställa ett dokument med info och frågar att skicka till Johan Borg.
 
 25/9 Mailat Johan Borg med mina ideer och frågat om hjälp med t.ex brusreducering och val av ADC för ändamålet.
+
+26/9 Möte, Tog mätningar med utrustningen för att avgöra vilken typ av input sensitivity som förstärkaren behöver
+
+27/9 Jobbat med kretsdesign av förstärkar steget. Samt möte inför träffen med foteine sammanställt divs frågor.
+
+29/9 Kretsdesign
+
+30/9 Möte med foteni
+
+2/10 PCB design för prototypkort till MCUn
+
+
