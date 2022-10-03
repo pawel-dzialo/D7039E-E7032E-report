@@ -63,3 +63,13 @@ Busy with other course
 
 28th september
 1400-1940 Working on BLE drivers
+
+30th september
+1000-1400 Working on BLE stuff
+1400-1430 Meeting
+1430-1800 Working on BLE stuff
+
+3rd october
+0800-1015 Doing some experiments with spike detection as prediction algorithm
+1015-1120 Scheduled meeting
+1120-1630 Spike detection looked promising so we kept working on it 
