@@ -68,10 +68,14 @@ Thursday
     Pre-meeting with project group.
     Meeting with Fouteini.
     After-meeting with project group.
-    
-    Saturday
-     Will try to get a trial dataset to be filtered and without major artifacts.
   
     -------------Week 40-------------------
     
     Monday
+     Project check-up in classroom.
+     Finished coding (python) the filtering and artifact removal (ICA).
+     Exact variables vill very likely has to be tweaked dpending on prediction algorithms.
+     Starting to look into FFT since it will be needed for atleast the neural network method.
+     
+     Wednesday
+     
