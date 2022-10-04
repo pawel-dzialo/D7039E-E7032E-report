@@ -72,4 +72,7 @@ Busy with other course
 3rd october
 0800-1015 Doing some experiments with spike detection as prediction algorithm
 1015-1120 Scheduled meeting
-1120-1630 Spike detection looked promising so we kept working on it 
+1120-1630 Spike detection looked promising so we kept working on it
+
+4th october
+1020 -  Adding some finishing touches to the BLE stuff. 
