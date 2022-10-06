@@ -75,4 +75,7 @@ Busy with other course
 1120-1630 Spike detection looked promising so we kept working on it
 
 4th october
-1020 -  Adding some finishing touches to the BLE stuff. 
+1020-1220  Adding some finishing touches to the BLE stuff. 
+
+6th october
+0800-1530  Adding finishing touches to BLE stuff, working on spike detection algorithm.
