@@ -74,8 +74,13 @@ Thursday
     Monday
      Project check-up in classroom.
      Finished coding (python) the filtering and artifact removal (ICA).
-     Exact variables vill very likely has to be tweaked dpending on prediction algorithms.
+     Exact variables vill very likely has to be tweaked depnding on prediction algorithms.
      Starting to look into FFT since it will be needed for atleast the neural network method.
      
-     Wednesday
+    Friday
+      Read up on Fast Fourier Transforms (FFTs)
+      Programmed a software FFT in python. 
+      It works without issues but the transformed signal is a bit difficult to intepret.
+      Should be fast enough to avoid having a hardware FFT since sampling is in 100-200 range.
+     
      
