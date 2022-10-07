@@ -79,3 +79,6 @@ Busy with other course
 
 6th october
 0800-1530  Adding finishing touches to BLE stuff, working on spike detection algorithm.
+
+7th october
+1300-1810 Working on spike detection algorithm mostly
