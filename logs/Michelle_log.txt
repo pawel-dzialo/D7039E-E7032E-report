@@ -82,7 +82,7 @@ Thursday
       Programmed a software FFT in python. 
       It works without issues but the transformed signal is a bit difficult to intepret.
       Should be fast enough to avoid having a hardware FFT since sampling is in 100-200 range.
-      Transferred report writing I hade already done from Git to new Overleaf group document.
+      Transferred report writing I had already done from Git to the new Overleaf group document.
   
      
      
