@@ -38,6 +38,16 @@
 
 30/9 Möte med foteni
 
-2/10 PCB design för prototypkort till MCUn
+2/10 PCB design för prototypkort till MCUn, Läst på om MCUn,JTAG,SWD,UART
+
+3/10 PCB design för prototypkort till MCUn
+
+4/10 PCB design för prototypkort till MCUn 
+
+5/10 Zoom möte med Johan Borg ang PCB design och allmäna tips kring Adc,signalhantering,FPGA
+
+7/10  PCB design för Instrumentförstärkare
+
+9/10 PCB design för prototypkort till MCUn (Kollat på isolerad UART connection för att inte inducera störningar eller störa ut kommunikationen)
 
 
