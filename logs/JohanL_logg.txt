@@ -49,3 +49,5 @@
 2022-10-03 workin all day on spike detection algoritm whit Pawel, promosing results, note to self check notepad for further ideas.
 
 2022-10-06 Working on spike detection improvement via offest from the mean number of spikes
+
+2022-10-09 Working on spike detection improvement, implemented a derivative
