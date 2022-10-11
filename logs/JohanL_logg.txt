@@ -51,3 +51,7 @@
 2022-10-06 Working on spike detection improvement via offest from the mean number of spikes
 
 2022-10-09 Working on spike detection improvement, implemented a derivative
+
+2022-10-11 continuing to work on the spike detection improvement
+
+
