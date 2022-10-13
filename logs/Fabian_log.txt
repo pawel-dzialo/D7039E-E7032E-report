@@ -28,3 +28,35 @@ Sick and staying at home. Sporadically working on the code and reading up on old
 --week 4--
 
 2022-09-19 Still sick. Sitting down together with Johan over voice-chat. Discussing and refining the game plan in detail, and also ironing out the bugs in the code from last week. First working neural network.
+
+Rest of the week:
+Sick and staying at home. Only working with the code a little bit.
+
+--week 5--
+
+2022-09-26 Classroom meeting, and later a meeting with Johan and Michelle, planning and deciding how we would structure and preprocess a dataset for our first real model. Discussing alternative methods.
+
+2022-09-27 Group meeting, getting everyone up to speed, and preparing for our meeting with Foteini.
+
+2022-09-28 Casual meeting with Johan, discussing and discarding alternative methods.
+
+2022-10-02 Setting up environment in C++ to work in a new language, since we basically got stuck in python (because everything in python is so poorly optimized, generating proper datasets would take hours. Rewriting everything from scratch would take a week or two, but would mean almost instant new datasets.).
+
+--week 6--
+
+Early week: Sick and staying at home. Reading up on the inner workings of the EDF file format, and planning on how to make a dataset generator in c++.
+
+2022-10-07 Working in c++ to try and make a dataset generator by reading EDF files and then pumping out "properly" formatted datasets. Specifically working on rewriting the datawindow code and formatting the project.
+
+2022-10-09 Continued working in c++. Specifically rewriting the code to open the seizure files.
+
+--week 7--
+
+2022-10-10 Working in c++. Specifically working on fixing the dataset generation and fixing the datawindow code further. The dataset generator is basically done, but it doesn't export to a file yet.
+
+2022-10-11 Experimenting with embedding python into c++ to potentially speed up the entire process further, to avoid having to go between different programs and files. Also starting to set up a GUI for the generator.
+
+2022-10-12 Continuing to work with the GUI of the program, and setting up multithreading capabilities to run GUI separate from generation, and separate from a potential future python execution in the same program.
+
+2022-10-13 Implementing the export-to-file functionality in c++ and import-from-file functionality in python for the dataset. FINALLY testing the first "properly trained" CNN, and getting a terrible result. But now, since everything is already set up, it should be easy to rapidly iterate.
+
