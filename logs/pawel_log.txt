@@ -80,5 +80,11 @@ Busy with other course
 6th october
 0800-1530  Adding finishing touches to BLE stuff, working on spike detection algorithm.
 
-7th october
+10th october
 1300-1810 Working on spike detection algorithm mostly
+
+8th october
+0815-1500 Helping out with the spike detection while i work on some BLE stuff
+
+13th october
+1140-1240 Looking over the PCB draft 
