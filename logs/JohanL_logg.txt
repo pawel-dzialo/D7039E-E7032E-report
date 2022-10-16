@@ -54,4 +54,6 @@
 
 2022-10-11 continuing to work on the spike detection improvement
 
+2022-10-12 Working on spike detection improvement, realising it might need a rewrite :(
 
+2022-10-14 meeting whit group.
