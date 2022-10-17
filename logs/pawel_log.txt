@@ -87,4 +87,7 @@ Busy with other course
 0815-1500 Helping out with the spike detection while i work on some BLE stuff
 
 13th october
-1140-1240 Looking over the PCB draft 
+1140-1240 Looking over the PCB draft
+
+17th october
+1015-1300 Planning how the data collection will be handled on MCU 
