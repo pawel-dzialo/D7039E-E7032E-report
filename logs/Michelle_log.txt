@@ -71,22 +71,37 @@ Thursday
   
     -------------Week 40-------------------
     
-    Monday
+  Monday
      Project check-up in classroom.
      Finished coding (python) the filtering and artifact removal (ICA).
      Exact variables vill very likely has to be tweaked depnding on prediction algorithms.
      Starting to look into FFT since it will be needed for atleast the neural network method.
      
-    Friday
+  Friday
       Read up on Fast Fourier Transforms (FFTs)
       Programmed a software FFT in python. 
       It works without issues but the transformed signal is a bit difficult to intepret.
       Should be fast enough to avoid having a hardware FFT since sampling is in 100-200 range.
       Transferred report writing I had already done from Git to the new Overleaf group document.
       Did another image for the report, this time a overview of how the cap will work.
-      
-       -------------Week 41-------------------
+   
+     -------------Week 41-------------------
+     
+  Tuesday
+      Read on CIC-filters (Cascaded Comb-Filter)
+        
+  Thursday
+      Tried to understand given C code example, will have to write own.
        
+     -------------Week 42-------------------
+ 
+ Monday
+        Project check-up in classroom.
+        Read more on CIC filters and how to program them
+        
+  Tuesday
+         Spent whole day with different languages and trials of CIC
+         Ended up with a Matlab code that is relatively easy to port to C.
   
      
      
