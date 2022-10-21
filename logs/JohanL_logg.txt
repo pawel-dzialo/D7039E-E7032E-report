@@ -61,3 +61,7 @@
 2022-10-14 meeting whit group.
 
 2022-10-19 working whit improvment of spike detection, doing some cleaning.
+
+2022-10-20 working on presentation and doing research
+
+2022-10-21 working on spike detection debugging and fixing errors + meeting about presentation
