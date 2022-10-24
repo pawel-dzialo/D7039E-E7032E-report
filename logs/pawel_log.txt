@@ -90,4 +90,10 @@ Busy with other course
 1140-1240 Looking over the PCB draft
 
 17th october
-1015-1300 Planning how the data collection will be handled on MCU 
+1015-1300 Planning how the data collection will be handled on MCU
+
+21st october
+1000-1700 Getting some prototype ADCs going with Johan A
+
+24th October
+1030-1900 Working on getting the ADCs talking with our MCU, managed to get it going will work on multiplexing next. 
