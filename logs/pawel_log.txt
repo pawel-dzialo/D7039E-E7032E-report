@@ -96,4 +96,7 @@ Busy with other course
 1000-1700 Getting some prototype ADCs going with Johan A
 
 24th October
-1030-1900 Working on getting the ADCs talking with our MCU, managed to get it going will work on multiplexing next. 
+1030-1900 Working on getting the ADCs talking with our MCU, managed to get it going will work on multiplexing next.
+
+25th October
+1400-1840 Got ADC multiplexing to work. 
