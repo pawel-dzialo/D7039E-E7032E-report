@@ -99,4 +99,7 @@ Busy with other course
 1030-1900 Working on getting the ADCs talking with our MCU, managed to get it going will work on multiplexing next.
 
 25th October
-1400-1840 Got ADC multiplexing to work. 
+1400-1840 Got ADC multiplexing to work
+
+26th October
+1300-1940 Managed to increase frequency on the multiplexing to something viable, also plotted the readings of a generated sine wave to verify everything is actually working. 
