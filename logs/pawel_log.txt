@@ -102,4 +102,7 @@ Busy with other course
 1400-1840 Got ADC multiplexing to work
 
 26th October
-1300-1940 Managed to increase frequency on the multiplexing to something viable, also plotted the readings of a generated sine wave to verify everything is actually working. 
+1300-1940 Managed to increase frequency on the multiplexing to something viable, also plotted the readings of a generated sine wave to verify everything is actually working.
+
+27th October
+1330-1700 Improved the workflow for plotting ADC output, tested plotting the output of both ADCs with different waves as inputs simultaneously, which worked much better than expected considering we're running SPI at 20 MHz over a breadboard with probably 1m+ of total route length with no decoupling or filtering.
