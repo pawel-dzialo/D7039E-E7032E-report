@@ -65,3 +65,20 @@
 2022-10-20 working on presentation and doing research
 
 2022-10-21 working on spike detection debugging and fixing errors + meeting about presentation
+
+2022-10-22 working on debugging
+
+sick
+
+2022-10-28 held a presentation on spike detection
+
+2022-10-31 fixing the bugg and started working on implementing 1 min window analysis
+
+2022-11-1 continuing, working on adapting existing code to 1 min window  analysis
+
+2022-11-2 continuing
+
+2022-11-3 contiuing. trying to fix a indexing problem in a segment counter
+
+2022-11-4 continuing whit the same.
+
