@@ -106,3 +106,6 @@ Busy with other course
 
 27th October
 1330-1700 Improved the workflow for plotting ADC output, tested plotting the output of both ADCs with different waves as inputs simultaneously, which worked much better than expected considering we're running SPI at 20 MHz over a breadboard with probably 1m+ of total route length with no decoupling or filtering.
+
+4th-5th November
+2140-0030 Helping Johan with the spike detection algorithm.
