@@ -60,3 +60,40 @@ Early week: Sick and staying at home. Reading up on the inner workings of the ED
 
 2022-10-13 Implementing the export-to-file functionality in c++ and import-from-file functionality in python for the dataset. FINALLY testing the first "properly trained" CNN, and getting a terrible result. But now, since everything is already set up, it should be easy to rapidly iterate.
 
+2022-10-14 Group meeting, cathching up on what we have been doing. Also discussing new things we could try.
+
+--week 8--
+
+2022-10-17 Classroom meeting. Starting to rewrite the code to handle a rectangular window size.
+
+2022-10-18 Continuing the work from the previous day.
+
+Later that week: Busy in other course
+
+--week 9--
+
+Early week: Working a bit on the presentation, and only a little bit with the code.
+
+2022-10-26 Preparing presentation and finishing the rectangular window code for both Python and C++.
+
+2022-10-27 Presentation
+
+--week 10--
+
+2022-10-31 Weekly meeting
+
+Later that week: Attempting to train the CNN so that it gives an OK result. Had massive problems with the Python IDE, including potential malware, so I might try to transfer everything to C++, but that would require an large amount of work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
