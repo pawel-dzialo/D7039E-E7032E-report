@@ -1,0 +1,53 @@
+#EEG processing for Epileptic Predition project
+#Author: Michelle von Rosen
+#Date: September 2022
+
+#Import packages
+import mne
+import matplotlib
+from autoreject import get_rejection_threshold
+
+######Load data######
+p_id = 'chb01_01'
+data_dir = 'data'
+file = data_dir + '/' + p_id + '.edf'
+raw = mne.io.read_raw_edf(file, preload=True)
+
+# Set electrode locations
+#print(mne.channels.get_builtin_montages())
+#montage = mne.channels.make_standard_montage('standard_1020') # Electrode position file 
+#raw.set_montage(montage)  # 1020 for International 10-20 system
+#montage.plot() #duplicate channes, "-" casuing issues
+
+######Filter data######
+low_cut = 1.0
+hi_cut = 30
+raw_ica = raw.copy().filter(low_cut, hi_cut)
+#raw_filt.plot_psd(fmax=100);
+
+######Remove artifacts######
+# Break raw data into 1 s epochs
+tstep = 1.0
+events_ica = mne.make_fixed_length_events(raw_ica, duration=tstep)
+epochs_ica = mne.Epochs(raw_ica, events_ica,
+                        tmin=0.0, tmax=tstep,
+                        baseline=None,
+                        preload=True)
+
+#reject one-offs of very noisy data
+reject = get_rejection_threshold(epochs_ica);
+reject
+
+# ICA parameters
+random_state = 42   # ensures ICA is reproducable each time it's run
+ica_n_components = .99     # Specify n_components as a decimal to set % explained variance
+
+# Fit ICA
+ica = mne.preprocessing.ICA(n_components=ica_n_components,
+                            random_state=random_state,
+                            )
+ica.fit(epochs_ica,
+        reject=reject,
+        tstep=tstep)
+
+ica.save(data_dir + '/' + p_id + '-ica.fif', overwrite=True);
