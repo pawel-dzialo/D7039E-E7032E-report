@@ -96,12 +96,50 @@ Thursday
      -------------Week 42-------------------
  
  Monday
-        Project check-up in classroom.
-        Read more on CIC filters and how to program them
+      Project check-up in classroom.
+      Read more on CIC filters and how to program them.
         
-  Tuesday
-         Spent whole day with different languages and trials of CIC
-         Ended up with a Matlab code that is relatively easy to port to C.
+ Tuesday
+       Spent whole day with different languages and trials of CIC
+       Ended up with a Matlab code that is relatively easy to port to C.
+         
+ Thursday
+      Did a popwerpoint structure for the group presentation in google sheets.
+      Filled in my parts of the popwerpoint.
+      Read-up on CIC as presentation prep.
+      
+  Friday
+      Met with group where I debriefed current work and we together decided presentation time frames.
+      
+        -------------Week 43 (tentaP)-------------------
+ 
+ Wednesday
+    Practiced presentation and took time.
+    
+  Thursday
+    Practiced presentation tohether with group
+    Had presentation and liestened to other's presentations.
+    
+          -------------Week 44-------------------
+ 
+ Wednesday
+    Started porting Matlab written CIC to C.
+    
+  Thursday
+    Finished up the logic of the port.
+    
+  Friday
+    Meeting with group.
+    Fixed som porting issues (like forgetting that Matlab indexing starts at 1...sigh).
   
+  Saturday
+     Turned floating points into unsigned 32 bit ints.
+     Tested finished CIC decimation C program with different parameters.
      
+          -------------Week 45-------------------
+ 
+ Monday
+    Cleaned up CIC program and added comments
+    Filled in un-updated log (this)
+    Uploaded old artifact removal code as well as the new CIC decimation program.
      
