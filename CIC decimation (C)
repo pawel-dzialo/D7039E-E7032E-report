@@ -1,0 +1,65 @@
+/* Function that uses CIC filter for decimation
+Author: Michelle von Rosen
+Date: November 2022
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+uint32_t *decimation_CIC(uint32_t *input, int size, int D, int N){
+// size = size of input array, D = decimation factor, N = delay buffer depth
+    int end = N/D;  // OBS! Must return an integer, change N & D accordingly
+    int outIndex = 0;
+    uint32_t intOut = 0;
+    uint32_t combOut = 0;
+    uint32_t delayBuffer[end];
+    uint32_t tempBuffer[end];
+    uint32_t output[size/D];
+    
+    // initializing the buffer with zeros
+    for(int i = 0; i < end; i++){
+        delayBuffer[i] = 0;
+    }
+    
+    // CIC algorithm loop
+    for(int i = 0; i < size; i++){
+        // integrator
+        intOut = intOut + input[i];
+        
+        // decimation
+        if ( (i+1) % D == 1){
+            //comb section
+            combOut = intOut - delayBuffer[end-1];
+            
+            // push values in array to the right i.e updating buffer
+            for(int j = 1; j < end; j++){
+                tempBuffer[j] = delayBuffer[j-1];
+            }
+            for(int k = 1; k < end; k++){
+                delayBuffer[k] = tempBuffer[k];
+                
+            }
+            delayBuffer[0] = intOut;
+            output[outIndex] = combOut;
+            outIndex++;
+        }
+        
+    }
+    // only for printing answer (testing), remove loop and library if not needed
+    for(int i = 0; i < sizeof(output)/sizeof(output[0]); i++){
+        printf("%d, ", output[i]);
+    }
+    return output;
+}
+
+int main()
+{
+    uint32_t data[] = {0,1,2,3,4,5,6,7,8,9};
+    int dataPoints = sizeof(data)/sizeof(data[0]);
+    int decimation = 5;
+    int bufferSize = 10;
+    static uint32_t *filtered_ptr;
+    
+    filtered_ptr = decimation_CIC(data, dataPoints, decimation, bufferSize);
+    return 0;
+}
