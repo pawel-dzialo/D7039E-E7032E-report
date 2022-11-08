@@ -142,4 +142,10 @@ Thursday
     Cleaned up CIC program and added comments
     Filled in un-updated log (this)
     Uploaded old artifact removal code as well as the new CIC decimation program.
+    Started writing on the FIR compensation filter.
+    
+ Tuesday
+    Finished and cleaned up the FIR filter.
+    Uploaded code and created a new branch for preprocessing.
+    Updated log.
      
