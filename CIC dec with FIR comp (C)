@@ -6,15 +6,15 @@ Date: November 2022
 #include <stdlib.h>
 #include <stdint.h>
 
-uint32_t *decimation_CIC(uint32_t *input, int size, int D, int N){
+uint32_t *decimation_CIC(uint32_t *input, int size, int D){
 // size = size of input array, D = decimation factor, N = delay buffer depth
-    int end = N/D;  // OBS! Must return an integer, change N & D accordingly
+    int end = size/D;  // OBS! Must return an integer, change N & D accordingly
     int outIndex = 0;
     uint32_t intOut = 0;
     uint32_t combOut = 0;
     uint32_t delayBuffer[end];
     uint32_t tempBuffer[end];
-    uint32_t output[size/D];
+    uint32_t output[end];
     
     // initializing the buffer with zeros
     for(int i = 0; i < end; i++){
@@ -45,21 +45,36 @@ uint32_t *decimation_CIC(uint32_t *input, int size, int D, int N){
         }
         
     }
-    // only for printing answer (testing), remove loop and library if not needed
-    for(int i = 0; i < sizeof(output)/sizeof(output[0]); i++){
-        printf("%d, ", output[i]);
+    // FIR Compensation Filter
+    uint32_t firOut[end-1];
+    uint32_t old = 0;
+    int firIndex = 0;
+    
+    // removing first 2 values since they have unexpected filter behaviour
+    for(int i = 2; i < end; i++){
+        // FIR algorithm
+        // "multiplying" the second newest value with 18 (2⁴+2¹)
+        // 18 for first order CIC-filter, use 10 for 2-3th order filter
+        old = (output[i-1] >> 4) + (output[i-1] >> 1);
+        firOut[firIndex] = output[i] +  output[i-2] - old;
+        
+        // only for printing answer (testing)
+        printf("%d, ", firOut[firIndex]);
+        firIndex++;
     }
+    
     return output;
 }
 
 int main()
 {
-    uint32_t data[] = {0,1,2,3,4,5,6,7,8,9};
+    uint32_t data[] = {0,1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1,0,1,2,3,4,5,6,7,8,9,
+        8,7,6,5,4,3,2,1,0,1,2,3,4,5,6,7,8,9,8,7,6,5};
     int dataPoints = sizeof(data)/sizeof(data[0]);
     int decimation = 5;
     int bufferSize = 10;
     static uint32_t *filtered_ptr;
     
-    filtered_ptr = decimation_CIC(data, dataPoints, decimation, bufferSize);
+    filtered_ptr = decimation_CIC(data, dataPoints, decimation);
     return 0;
 }
