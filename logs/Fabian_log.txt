@@ -82,10 +82,15 @@ Early week: Working a bit on the presentation, and only a little bit with the co
 
 2022-10-31 Weekly meeting
 
-Later that week: Attempting to train the CNN so that it gives an OK result. Had massive problems with the Python IDE, including potential malware, so I might try to transfer everything to C++, but that would require an large amount of work.
+Later that week: Attempting to train the CNN so that it gives an OK result. Had massive problems with the Python IDE, including potential malware, so I might try to transfer everything to C++, but that would require a large amount of work.
 
+--week 11--
 
+2022-11-07 Weekly meeting. Also finally got CNN to make properly distributed guesses. Still very much untuned, but this is promising.
 
+2022-11-11 Group meeting. Discussing what we have been doing mostly.
+
+Weekend: Successful CNN! Upwards of 98% accuracy on training data (unimportant), 67% accuracy on never before seen data (important). This can be improved further, but this is good enough to move on to implementing on the MCU. Exported result to ONNX file for potential test-implementation.
 
 
 
