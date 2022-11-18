@@ -85,8 +85,12 @@ sick
 2022-11-17 (forgot to edit logg been super busy) i Have finished the derivative algoritm and tested it
            it does not produce any meaningful prediction, so need to figure out wether it is wrongfully implemented or 
            if it is based on a faulty premise. 
+           
 2022-11-17 discussed SNN,SVM and preproccessing of dataset whit fabian, Whent back to the theory and read about spike behavior
            in epileptic seazures, Read about matching filers and spike sorting, Sketching on idea of comparing height of spike to
            background mean as a way of increasing accuracy and removing FP. 
            
+2022-11-18 Doing some research for spike detection, trying to figure out wether to take some steps back or to improve derivative.
+           also had group meeting about our current progress, and for my part wether to continue on this track or help something else. 
+           conclusion was that i should try abit more with this since we still want a backupp if CNN fails to be implemented.
       
