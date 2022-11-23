@@ -94,3 +94,5 @@ sick
            also had group meeting about our current progress, and for my part wether to continue on this track or help something else. 
            conclusion was that i should try abit more with this since we still want a backupp if CNN fails to be implemented.
       
+2022-11-19 researched spike detection improvements.
+
