@@ -96,3 +96,9 @@ sick
       
 2022-11-19 researched spike detection improvements.
 
+2022-11-23 tryed different parameters to see if the window_length might affect the behavior of the distribution
+
+2022-11-23 researched matching filter
+
+2022-11-24 
+
