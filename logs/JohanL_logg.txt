@@ -100,5 +100,10 @@ sick
 
 2022-11-23 researched matching filter
 
-2022-11-24 
+2022-11-24 to 27 worked on extracting spikes in list form and selecting good ones.
 
+2022-11-28  working on how to create a averaged pattern, but facing problem whit the difference in lenght of the spikes,
+
+2022-11-29 to 30 death by robotic overlords :) ( aka bussy whit robotic labs)
+
+2022-11-1  Brainstormed a possible solution whit pawel
