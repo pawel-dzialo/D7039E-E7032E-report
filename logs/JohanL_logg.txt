@@ -107,3 +107,5 @@ sick
 2022-11-29 to 30 death by robotic overlords :) ( aka bussy whit robotic labs)
 
 2022-11-1  Brainstormed a possible solution whit pawel
+
+2022-11-2 to 2022-12-12 have worked on three things automating spike patern , reading abit deeper into spikes in EEG and its connection to action potentials and epilepsi, and implementing/testing matching filters 
