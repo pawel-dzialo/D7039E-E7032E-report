@@ -92,6 +92,41 @@ Later that week: Attempting to train the CNN so that it gives an OK result. Had 
 
 Weekend: Successful CNN! Upwards of 98% accuracy on training data (unimportant), 67% accuracy on never before seen data (important). This can be improved further, but this is good enough to move on to implementing on the MCU. Exported result to ONNX file for potential test-implementation.
 
+--week 12--
+
+2022-11-14 Weekly meeting
+
+2022-11-17 Making plan to improve accuracy, by skipping "ambiguous" data between 5 and 30 minutes before seizure, to get a clearer difference between pre and inter ictal.
+
+2022-11-18 Group meeting, and also implementing the previous idea into code. Very successful. About 89% accuracy between pre and inter ictal, more than enough to make qualified predictions, especially if we take the average over a longer time. Later I also made a new dataset from a different person and tried guessing it with the same model, but as expected it did poorly. The model uses data from only one person. The new challenge is to make a general model that works for many different people.
+
+--week 13--
+
+2022-11-21 Weekly meeting
+
+Rest of the week: No particular progress made, but general planning on how to make a general model. Once the pre-processing is done and implemented I will make a huge dataset and just try to train it "normally".
+
+2022-11-27 Simulating a "real" test. However, the model now performs quite bad. The problem might be an inbalanced dataset where the inter-ictal data is tainted by brain activity from a test occasion loaded later, since that data is sorted out with even timesteps to match the data amount of the other types, and later data plays a bigger role. The model may therefore be cheating a bit by classifying between occasions rather than states.
+
+--week 14--
+
+2022-11-28 Continuing work from previous day
+
+Rest of the week: Working on other courses, but still planning a little bit.
+
+2022-12-04 Making a more balanced dataset for the model. It kind of works on the "real" test now, but is still reliant on having a lot of data from one single person. The big challenge to make a generalized model for multiple people is still ahead, and might not be possible with the way the current model is set up.
+
+--week 15--
+
+2022-12-05 Weekly meeting
+
+2022-12-07 Meeting with Michelle and Johan. Talking about the implementation of the pre-processing into the dataset, and then also the neural network.
+
+Rest of the week: Waiting for the code to be rewritten to fit the same structure as the dataset (has to be done before I can implement anything). Meanwhile working a lot on the other course.
+
+2022-12-12 While waiting for the preprocessing I tried to improve the results of the "real" test, but the results are pretty weird. I might have a model that predicts a seizure, as it seems to always guess pre-ictal when a seizure is had on the same session, and always guess inter-ictal on sessions when no seizure was had. I will have to investigate this further.
+
+
 
 
 
