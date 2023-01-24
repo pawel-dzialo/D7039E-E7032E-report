@@ -1,0 +1,107 @@
+
+**** 11/18/22 11:23:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "IdealOPamp-transientGain"  [ c:\cadence\projects\skola\projektkurs\eeg_amplifier-pspicefiles\idealopamp\transientgain.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transientGain.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../eeg_amplifier-pspicefiles/opamp_int.lib" 
+.LIB "../../../eeg_amplifier-pspicefiles/eeg_amplifier.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "C:\Cadence\Projects\Projekt174\Libary\ad711.lib" 
+.lib "C:\Cadence\SPB_17.4\tools\pspice\library\opamp.lib" 
+.lib "C:\Cadence\LTU_Parts\LTU10.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.05 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\IdealOPamp.net" 
+
+
+
+**** INCLUDING IdealOPamp.net ****
+* source EEG_AMPLIFIER
+R_R1         N00249 N00264  1k TC=0,0 
+R_R2         N00242 N00279  1k TC=0,0 
+R_R3         N00223 N00216  2.2k TC=0,0 
+R_R4         N00216 N00249  15k TC=0,0 
+R_R5         N00223 N00242  15k TC=0,0 
+R_R6         0 N00279  15k TC=0,0 
+R_R7         N00264 N00367  15k TC=0,0 
+V_V3         N00497 0  AC 1
++SIN 0 20m 100 0 0 0
+E_U4         N00242 0 VALUE {LIMIT(V(0,N00223)*1E6,-15V,+15V)}
+E_U5         N00249 0 VALUE {LIMIT(V(N00497,N00216)*1E6,0V,3.3V)}
+E_U6         N00367 0 VALUE {LIMIT(V(N00279,N00264)*1E6,-15V,+15V)}
+
+**** RESUMING transientGain.cir ****
+.END
+
+**** 11/18/22 11:23:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "IdealOPamp-transientGain"  [ c:\cadence\projects\skola\projektkurs\eeg_amplifier-pspicefiles\idealopamp\transientgain.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00216)    0.0000 (N00223)    0.0000 (N00242)    0.0000 (N00249)    0.0000     
+
+(N00264)    0.0000 (N00279)    0.0000 (N00367)    0.0000 (N00497)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  5.000E-03.
+         Time step =  867.4E-21, minimum allowable step size =  1.000E-18
+
+ERROR(ORPSIM-15659): Discontinuing simulation due to convergence problem
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00216)-127.9E-09 (N00223)-872.0E-15 (N00242) 872.0E-09 (N00249)-999.9E-09     
+
+(N00264) 817.5E-09 (N00279) 817.5E-09 (N00367) 28.08E-06 (N00497)-331.0E-09 
+
+
+**** Interrupt ****

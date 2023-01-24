@@ -1,0 +1,9 @@
+* source ANTIALIASING
+X_U1         N00166 N00148 +V -V N00148 uA741
+R_R1         N000851 N00175  6.8K TC=0,0 
+R_R2         N00175 N00166  150K TC=0,0 
+C_C1         0 N00166  15n  TC=0,0 
+C_C2         N00148 N00175  150n  TC=0,0 
+V_V1         N000851 0 DC 0Vdc AC 1Vac 
+V_V2         +V 0 1.5
+V_V3         0 -V 1.5

@@ -1,0 +1,250 @@
+
+**** 01/24/23 09:57:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Acsweep"  [ C:\Cadence\Projects\Skola\Projektkurs\RC_amp_LP-PSpiceFiles\SCHEMATIC1\Acsweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Acsweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "C:\Cadence\Projects\Projekt174\Libary\ad711.lib" 
+.lib "C:\Cadence\SPB_17.4\tools\pspice\library\opamp.lib" 
+.lib "C:\Cadence\LTU_Parts\LTU10.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 1G
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source RC_AMP_LP
+C_C2         N00637 N00627  150n  TC=0,0 
+R_R1         N03721 N00627  6.8K TC=0,0 
+R_R2         N00627 N00739  150K TC=0,0 
+X_U1         N00739 N00637 VCC -VCC N00637 uA741
+C_C1         0 N00739  15n  TC=0,0 
+V_V2         0 -VCC 2.5Vdc
+X_U2         N04244 N03569 VCC -VCC N03521 OPA37/BB
+R_R6         N03525 N03521  10K TC=0,0 
+R_R9         N03679 N03569  100 TC=0,0 
+R_R8         N03569 N03521  100k TC=0,0 
+R_R7         0 N03525  66k TC=0,0 
+X_U4         0 N03679 VCC -VCC N03835 OPA37/BB
+R_R3         N03835 N03679  100k TC=0,0 
+X_U3         N03525 N03801 VCC -VCC N03721 OPA37/BB
+R_R4         N03801 N03835  10K TC=0,0 
+R_R5         N03721 N03801  66k TC=0,0 
+V_V1         VCC 0 2.5Vdc
+V_V3         N04234 0 DC 0Vdc AC 1Vac 
+C_C3         0 N04244  3.3n  TC=0,0 
+R_R10         N04234 N04244  2000 TC=0,0 
+
+**** RESUMING Acsweep.cir ****
+.END
+
+**** 01/24/23 09:57:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Acsweep"  [ C:\Cadence\Projects\Skola\Projektkurs\RC_amp_LP-PSpiceFiles\SCHEMATIC1\Acsweep.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dy         X_U2.DX         X_U4.DX         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03                                 
+         CJO                   10.000000E-12                                 
+
+
+               X_U3.DX         
+          IS  800.000000E-18 
+
+
+**** 01/24/23 09:57:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Acsweep"  [ C:\Cadence\Projects\Skola\Projektkurs\RC_amp_LP-PSpiceFiles\SCHEMATIC1\Acsweep.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         X_U2.QX         X_U4.QX         X_U3.QX         
+               NPN             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75            8.333000E+03    8.333000E+03    8.333000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.42            2.42         
+           D     .87             .87             .87             .87         
+
+
+**** 01/24/23 09:57:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Acsweep"  [ C:\Cadence\Projects\Skola\Projektkurs\RC_amp_LP-PSpiceFiles\SCHEMATIC1\Acsweep.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    2.5000  ( -VCC)   -2.5000  (N00627)    -.3949 (N00637)    -.4068     
+
+(N00739)    -.4068 (N03521)    -.0284 (N03525)    -.0248 (N03569)-29.50E-06     
+
+(N03679) 358.3E-09 (N03721)    -.3943 (N03801)    -.0248 (N03835)     .0314     
+
+(N04234)    0.0000 (N04244)-29.89E-06 (X_U1.6) 38.34E-06 (X_U1.7)    -.4068     
+
+(X_U1.8)    -.4068 (X_U1.9)    0.0000 (X_U2.6) 7.642E-06 (X_U2.7)    -.0284     
+
+(X_U2.8)    -.0284 (X_U2.9)    0.0000 (X_U3.6) 106.1E-06 (X_U3.7)    -.3945     
+
+(X_U3.8)    -.3945 (X_U3.9)    0.0000 (X_U4.6)-8.538E-06 (X_U4.7)     .0316     
+
+(X_U4.8)     .0316 (X_U4.9)    0.0000 (X_U1.10)   -1.0144                       
+
+(X_U1.11)    2.4604                   (X_U1.12)    2.4604                       
+
+(X_U1.13)   -1.0005                   (X_U1.14)   -1.0005                       
+
+(X_U1.53)    1.5000                   (X_U1.54)   -1.5000                       
+
+(X_U1.90) 79.62E-06                   (X_U1.91)   40.0000                       
+
+(X_U1.92)  -40.0000                   (X_U1.99)    0.0000                       
+
+(X_U2.10)    -.6669                   (X_U2.11)    2.4739                       
+
+(X_U2.12)    2.4739                   (X_U2.13)    -.6666                       
+
+(X_U2.14)    -.6666                   (X_U2.53)    1.3000                       
+
+(X_U2.54)   -1.3000                   (X_U2.90)-644.3E-06                       
+
+(X_U2.91)   25.0000                   (X_U2.92)  -25.0000                       
+
+(X_U2.99)    0.0000                   (X_U3.10)    -.6916                       
+
+(X_U3.11)    2.4739                   (X_U3.12)    2.4739                       
+
+(X_U3.13)    -.6913                   (X_U3.14)    -.6913                       
+
+(X_U3.53)    1.3000                   (X_U3.54)   -1.3000                       
+
+(X_U3.90)    -.0055                   (X_U3.91)   25.0000                       
+
+(X_U3.92)  -25.0000                   (X_U3.99)    0.0000                       
+
+(X_U4.10)    -.6669                   (X_U4.11)    2.4739                       
+
+(X_U4.12)    2.4739                   (X_U4.13)    -.6666                       
+
+(X_U4.14)    -.6666                   (X_U4.53)    1.3000                       
+
+(X_U4.54)   -1.3000                   (X_U4.90)     .0059                       
+
+(X_U4.91)   25.0000                   (X_U4.92)  -25.0000                       
+
+(X_U4.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.415E-03
+    V_V1        -2.413E-03
+    V_V3        -1.495E-08
+    X_U1.vb      3.834E-10
+    X_U1.vc      1.908E-12
+    X_U1.ve      1.299E-12
+    X_U1.vlim    7.962E-08
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+    X_U2.VB      7.642E-11
+    X_U2.VC      1.329E-12
+    X_U2.VE      1.272E-12
+    X_U2.VLIM   -6.443E-07
+    X_U2.VLP    -2.500E-11
+    X_U2.VLN    -2.500E-11
+    X_U4.VB     -8.538E-11
+    X_U4.VC      1.269E-12
+    X_U4.VE      1.332E-12
+    X_U4.VLIM    5.928E-06
+    X_U4.VLP    -2.499E-11
+    X_U4.VLN    -2.501E-11
+    X_U3.VB      1.061E-09
+    X_U3.VC      1.695E-12
+    X_U3.VE      9.065E-13
+    X_U3.VLIM   -5.519E-06
+    X_U3.VLP    -2.501E-11
+    X_U3.VLN    -2.500E-11
+
+    TOTAL POWER DISSIPATION   1.21E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/24/23 09:57:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Acsweep"  [ C:\Cadence\Projects\Skola\Projektkurs\RC_amp_LP-PSpiceFiles\SCHEMATIC1\Acsweep.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .11
+

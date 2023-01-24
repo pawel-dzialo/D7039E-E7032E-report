@@ -1,0 +1,5 @@
+* source RCFILTER
+R_R1         N00120 N00067  {rsweep} TC=0,0 
+C_C1         0 N00067  3.3n  TC=0,0 
+V_V1         N00120 0 DC 0Vdc AC 1Vac 
+.PARAM  rsweep=50300

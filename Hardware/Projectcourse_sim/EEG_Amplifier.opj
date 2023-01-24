@@ -1,0 +1,118 @@
+(ExpressProject "EEG_Amplifier"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S008 (3870700) [6/25/2020]-[11/20/22]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File "eeg_amplifier.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\eeg_amplifier-pspicefiles\idealopamp\idealopamp.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\eeg_amplifier-pspicefiles\idealopamp\transientgain.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\eeg_amplifier-pspicefiles\idealopamp\transientgain.sim"
+        (DisplayName "IdealOPamp-transientGain")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\eeg_amplifier-pspicefiles\opamp_int.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\eeg_amplifier-pspicefiles\opamp_int.lib"))
+      (File ".\eeg_amplifier-pspicefiles\eeg_amplifier.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\eeg_amplifier-pspicefiles\eeg_amplifier.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "Asus")
+  (PartMRUSelector
+    (TLC2201/102/TI
+      (FullPartName "TLC2201/102/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (uA741
+      (FullPartName "uA741.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\ORCAD\ORCAD_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (LF412/ON
+      (FullPartName "LF412/ON.Normal")
+      (LibraryName
+         "D:\ORCAD\ORCAD_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_AMP.OLB")
+      (DeviceIndex "0"))
+    (AD8079B/AD
+      (FullPartName "AD8079B/AD.Normal")
+      (LibraryName
+         "D:\ORCAD\ORCAD_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANLG_DEV.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.4\tools\capture\library\pspice")
+  (Folder "Logs")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Cadence\Projects\Skola\Projektkurs\eeg_amplifier.dsn")
+      (Path "Design Resources"
+         "C:\Cadence\Projects\Skola\Projektkurs\eeg_amplifier.dsn" "IdealOPamp")
+      (Path "Design Resources"
+         "C:\Cadence\Projects\Skola\Projektkurs\eeg_amplifier.dsn" "Sketches")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Cadence\Projects\Skola\Projektkurs\eeg_amplifier.dsn" "IdealOPamp"
+         "IdealOPamp_v1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 624"))
+      (Tab 0))))

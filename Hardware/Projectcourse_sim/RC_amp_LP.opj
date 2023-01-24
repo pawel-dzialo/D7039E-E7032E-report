@@ -1,0 +1,63 @@
+(ExpressProject "RC_amp_LP"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 S008 (3870700) [6/25/2020]-[01/24/23]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\rc_amp_lp.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\rc_amp_lp-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\rc_amp_lp-pspicefiles\schematic1\acsweep.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\rc_amp_lp-pspicefiles\schematic1\acsweep.sim"
+        (DisplayName "SCHEMATIC1-Acsweep")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Cadence\Projects\Skola\Projektkurs\rc_amp_lp.dsn")
+      (Path "Design Resources"
+         "C:\Cadence\Projects\Skola\Projektkurs\rc_amp_lp.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Cadence\Projects\Skola\Projektkurs\rc_amp_lp.dsn" "SCHEMATIC1"
+         "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 647"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1468 24 665")
+        (Scroll "-230 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\CADENCE\PROJECTS\SKOLA\PROJEKTKURS\RC_AMP_LP.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Asus"))

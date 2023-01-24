@@ -1,0 +1,244 @@
+
+**** 11/18/22 12:35:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "IdealOPamp-transientGain"  [ c:\cadence\projects\skola\projektkurs\eeg_amplifier-pspicefiles\idealopamp\transientgain.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transientGain.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../eeg_amplifier-pspicefiles/opamp_int.lib" 
+.LIB "../../../eeg_amplifier-pspicefiles/eeg_amplifier.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "C:\Cadence\Projects\Projekt174\Libary\ad711.lib" 
+.lib "C:\Cadence\SPB_17.4\tools\pspice\library\opamp.lib" 
+.lib "C:\Cadence\LTU_Parts\LTU10.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.05 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\IdealOPamp.net" 
+
+
+
+**** INCLUDING IdealOPamp.net ****
+* source EEG_AMPLIFIER
+R_R1         N00249 N00264  1k TC=0,0 
+R_R2         N00242 N00279  1k TC=0,0 
+R_R3         N00223 N00216  2.2k TC=0,0 
+R_R4         N00216 N00249  15k TC=0,0 
+R_R5         N00223 N00242  15k TC=0,0 
+R_R6         0 N00279  15k TC=0,0 
+R_R7         N00264 N00367  15k TC=0,0 
+V_V3         N00497 0  AC 1
++SIN 0 20m 100 0 0 0
+V_V4         VCC 0 10Vdc
+V_V5         -VCC 0 -10Vdc
+X_U10         N00497 N00216 VCC -VCC N00249 TLC2201/102/TI
+X_U11         0 N00223 VCC -VCC N00242 TLC2201/102/TI
+X_U12         N00279 N00264 VCC -VCC N00367 TLC2201/102/TI
+
+**** RESUMING transientGain.cir ****
+.END
+
+**** 11/18/22 12:35:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "IdealOPamp-transientGain"  [ c:\cadence\projects\skola\projektkurs\eeg_amplifier-pspicefiles\idealopamp\transientgain.s
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U10.DX        X_U11.DX        X_U12.DX        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+
+
+**** 11/18/22 12:35:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "IdealOPamp-transientGain"  [ c:\cadence\projects\skola\projektkurs\eeg_amplifier-pspicefiles\idealopamp\transientgain.s
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U10.JX        X_U11.JX        X_U12.JX        
+               PJF             PJF             PJF             
+         VTO    -.155           -.155           -.155        
+        BETA    1.462000E-03    1.462000E-03    1.462000E-03 
+          IS  500.000000E-15  500.000000E-15  500.000000E-15 
+          KF   10.000000E-18   10.000000E-18   10.000000E-18 
+
+
+**** 11/18/22 12:35:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "IdealOPamp-transientGain"  [ c:\cadence\projects\skola\projektkurs\eeg_amplifier-pspicefiles\idealopamp\transientgain.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)   10.0000  ( -VCC)  -10.0000  (N00216)-68.33E-06 (N00223)-68.33E-06     
+
+(N00242)-68.23E-06 (N00249)-68.23E-06 (N00264)-132.3E-06 (N00279)-63.97E-06     
+
+(N00367)    -.0011 (N00497)    0.0000 (X_U10.6)     .0020                       
+
+(X_U10.7)-56.19E-06                   (X_U10.8)-56.19E-06                       
+
+(X_U10.9)    0.0000                   (X_U11.6)     .0020                       
+
+(X_U11.7)-69.03E-06                   (X_U11.8)-69.03E-06                       
+
+(X_U11.9)    0.0000                   (X_U12.6)     .0020                       
+
+(X_U12.7)    -.0011                   (X_U12.8)    -.0011                       
+
+(X_U12.9)    0.0000                   (X_U10.10)     .0599                      
+
+(X_U10.11)  -10.0850                  (X_U10.12)  -10.0850                      
+
+(X_U10.53)    9.1000                  (X_U10.54)   -9.2000                      
+
+(X_U10.60)  -10.3000                  (X_U10.80) 230.0E-12                      
+
+(X_U10.81)-68.33E-06                  (X_U10.82)    2.2000                      
+
+(X_U10.83)   -4.5000                  (X_U10.84)-68.33E-06                      
+
+(X_U10.85) 200.0E-06                  (X_U10.86)    0.0000                      
+
+(X_U10.88)-1.500E-18                  (X_U10.89) 31.67E-06                      
+
+(X_U10.90) 64.06E-06                  (X_U10.91)    2.8000                      
+
+(X_U10.92)   -2.8000                  (X_U10.99)    0.0000                      
+
+(X_U11.10)     .0599                  (X_U11.11)  -10.0850                      
+
+(X_U11.12)  -10.0850                  (X_U11.53)    9.1000                      
+
+(X_U11.54)   -9.2000                  (X_U11.60)  -10.3000                      
+
+(X_U11.80) 230.0E-12                  (X_U11.81)-68.33E-06                      
+
+(X_U11.82)    2.2000                  (X_U11.83)   -4.5000                      
+
+(X_U11.84)-68.33E-06                  (X_U11.85) 200.0E-06                      
+
+(X_U11.86)    0.0000                  (X_U11.88)-1.500E-18                      
+
+(X_U11.89) 31.67E-06                  (X_U11.90)-4.252E-06                      
+
+(X_U11.91)    2.8000                  (X_U11.92)   -2.8000                      
+
+(X_U11.99)    0.0000                  (X_U12.10)     .0598                      
+
+(X_U12.11)  -10.0850                  (X_U12.12)  -10.0850                      
+
+(X_U12.53)    9.1000                  (X_U12.54)   -9.2000                      
+
+(X_U12.60)  -10.3000                  (X_U12.80)-63.97E-06                      
+
+(X_U12.81)-132.3E-06                  (X_U12.82)    2.2000                      
+
+(X_U12.83)   -4.5000                  (X_U12.84)-132.3E-06                      
+
+(X_U12.85) 200.0E-06                  (X_U12.86)    0.0000                      
+
+(X_U12.88)-1.500E-18                  (X_U12.89)-32.29E-06                      
+
+(X_U12.90)-64.05E-06                  (X_U12.91)    2.8000                      
+
+(X_U12.92)   -2.8000                  (X_U12.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -5.967E-12
+    V_V4        -3.300E-03
+    V_V5         3.300E-03
+    X_U10.VAD    1.350E-04
+    X_U10.VCM+  -2.201E-12
+    X_U10.VCM-   4.501E-12
+    X_U10.VB     1.998E-08
+    X_U10.VC     9.101E-12
+    X_U10.VE     9.201E-12
+    X_U10.VLIM   6.406E-08
+    X_U10.VLP   -2.801E-12
+    X_U10.VLN   -2.801E-12
+    X_U10.VPSR  -2.000E-08
+    X_U11.VAD    1.350E-04
+    X_U11.VCM+  -2.201E-12
+    X_U11.VCM-   4.501E-12
+    X_U11.VB     1.998E-08
+    X_U11.VC     9.101E-12
+    X_U11.VE     9.201E-12
+    X_U11.VLIM  -4.252E-09
+    X_U11.VLP   -2.801E-12
+    X_U11.VLN   -2.801E-12
+    X_U11.VPSR  -2.000E-08
+    X_U12.VAD    1.350E-04
+    X_U12.VCM+  -2.201E-12
+    X_U12.VCM-   4.501E-12
+    X_U12.VB     1.999E-08
+    X_U12.VC     9.102E-12
+    X_U12.VE     9.200E-12
+    X_U12.VLIM  -6.405E-08
+    X_U12.VLP   -2.801E-12
+    X_U12.VLN   -2.801E-12
+    X_U12.VPSR  -2.000E-08
+
+    TOTAL POWER DISSIPATION   6.61E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/18/22 12:35:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "IdealOPamp-transientGain"  [ c:\cadence\projects\skola\projektkurs\eeg_amplifier-pspicefiles\idealopamp\transientgain.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =      211.39
+  Total job time (using Solver 1)   =         .08
+

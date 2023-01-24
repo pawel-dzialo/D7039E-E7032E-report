@@ -1,0 +1,172 @@
+
+**** 01/24/23 09:52:25 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sweep"  [ C:\Cadence\Projects\Skola\Projektkurs\Antialiasing-PSpiceFiles\SCHEMATIC1\sweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "C:\Cadence\Projects\Projekt174\Libary\ad711.lib" 
+.lib "C:\Cadence\SPB_17.4\tools\pspice\library\opamp.lib" 
+.lib "C:\Cadence\LTU_Parts\LTU10.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 10k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ANTIALIASING
+X_U1         N00166 N00148 +V -V N00148 uA741
+R_R1         N000851 N00175  6.8K TC=0,0 
+R_R2         N00175 N00166  150K TC=0,0 
+C_C1         0 N00166  15n  TC=0,0 
+C_C2         N00148 N00175  150n  TC=0,0 
+V_V1         N000851 0 DC 0Vdc AC 1Vac 
+V_V2         +V 0 1.5
+V_V3         0 -V 1.5
+
+**** RESUMING sweep.cir ****
+.END
+
+**** 01/24/23 09:52:25 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sweep"  [ C:\Cadence\Projects\Skola\Projektkurs\Antialiasing-PSpiceFiles\SCHEMATIC1\sweep.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.dx         X_U1.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 01/24/23 09:52:25 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sweep"  [ C:\Cadence\Projects\Skola\Projektkurs\Antialiasing-PSpiceFiles\SCHEMATIC1\sweep.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 01/24/23 09:52:25 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sweep"  [ C:\Cadence\Projects\Skola\Projektkurs\Antialiasing-PSpiceFiles\SCHEMATIC1\sweep.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   +V)    1.5000  (   -V)   -1.5000  (N00148)    -.0125 (N00166)    -.0125     
+
+(N00175)-542.2E-06 (X_U1.6) 1.175E-06 (X_U1.7)    -.0125 (X_U1.8)    -.0125     
+
+(X_U1.9)    0.0000 (N000851)    0.0000                   (X_U1.10)    -.6202    
+
+(X_U1.11)    1.4603                   (X_U1.12)    1.4603                       
+
+(X_U1.13)    -.6063                   (X_U1.14)    -.6063                       
+
+(X_U1.53)     .5000                   (X_U1.54)    -.5000                       
+
+(X_U1.90) 79.77E-06                   (X_U1.91)   40.0000                       
+
+(X_U1.92)  -40.0000                   (X_U1.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.973E-08
+    V_V2        -1.802E-04
+    V_V3        -1.804E-04
+    X_U1.vb      1.175E-11
+    X_U1.vc      5.133E-13
+    X_U1.ve      5.568E-13
+    X_U1.vlim    7.977E-08
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   5.41E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/24/23 09:52:25 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sweep"  [ C:\Cadence\Projects\Skola\Projektkurs\Antialiasing-PSpiceFiles\SCHEMATIC1\sweep.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

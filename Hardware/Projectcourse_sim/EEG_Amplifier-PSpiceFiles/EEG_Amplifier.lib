@@ -1,0 +1,18 @@
+
+* connections:      non-inverting input
+*                   |   inverting input
+*                   |   |   output
+*                   |   |   |
+.SUBCKT OPAMP1      1   2   6
+* INPUT IMPEDANCE
+RIN	1	2	10MEG
+* DCGAIN =100K AND POLE1=1/(2*PI*RP1*CP1)=100HZ
+* GBP = DCGAIN X POLE1 = 10MHZ
+EGAIN	3 0	1 2	100K
+RP1	3	4	1000
+CP1	4	0	1.5915UF
+* OUTPUT BUFFER AND RESISTANCE
+EBUFFER	5 0	4 0	1
+ROUT	5	6	10
+.ENDS
+*

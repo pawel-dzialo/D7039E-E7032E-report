@@ -1,0 +1,221 @@
+
+**** 01/19/23 18:20:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\Projects\Skola\Projektkurs\InsAmp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "C:\Cadence\Projects\Projekt174\Libary\ad711.lib" 
+.lib "C:\Cadence\SPB_17.4\tools\pspice\library\opamp.lib" 
+.lib "C:\Cadence\LTU_Parts\LTU10.LIB" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.1s 0 0.1m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source INSAMP
+X_U1         0 N00449 VCC -VCC N00457 OPA37/BB
+X_U2         N01816 N00453 VCC -VCC N00469 OPA37/BB
+X_U3         N00662 N00637 VCC -VCC N00718 OPA37/BB
+V_V1         VCC 0 2.5Vdc
+V_V2         0 -VCC 2.5Vdc
+R_R1         N00453 N00469  100k TC=0,0 
+R_R2         N00449 N00453  100 TC=0,0 
+R_R3         N00457 N00449  100k TC=0,0 
+R_R4         N00637 N00457  10K TC=0,0 
+R_R5         N00718 N00637  66k TC=0,0 
+R_R6         N00662 N00469  10K TC=0,0 
+R_R7         0 N00662  66k TC=0,0 
+X_V4         N015740 0 VRNDMN PARAMS: NVAL=1u
+V_V5         N01816 0  AC 0
++SIN 0 10u 100 0 0 0
+R_R8         N015740 0  1k TC=0,0 
+
+**** RESUMING trans.cir ****
+.END
+
+**** 01/19/23 18:20:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\Projects\Skola\Projektkurs\InsAmp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DX         X_U2.DX         X_U3.DX         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+
+
+**** 01/19/23 18:20:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\Projects\Skola\Projektkurs\InsAmp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         X_U2.QX         X_U3.QX         
+               NPN             NPN             NPN             
+       LEVEL    1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF    8.333000E+03    8.333000E+03    8.333000E+03 
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 01/19/23 18:20:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\Projects\Skola\Projektkurs\InsAmp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    2.5000  ( -VCC)   -2.5000  (N00449) 375.4E-09 (N00453) 375.4E-09     
+
+(N00457)     .0015 (N00469)     .0015 (N00637)     .0012 (N00662)     .0012     
+
+(N00718) 2.869E-06 (N01816)    0.0000 (X_U1.6)-402.6E-09 (X_U1.7)     .0015     
+
+(X_U1.8)     .0015 (X_U1.9)    0.0000 (X_U2.6)-402.6E-09 (X_U2.7)     .0015     
+
+(X_U2.8)     .0015 (X_U2.9)    0.0000 (X_U3.6)-435.8E-12 (X_U3.7) 2.251E-06     
+
+(X_U3.8) 2.251E-06 (X_U3.9)    0.0000 (N015740) 1.160E-09                       
+
+(X_U1.10)    -.6669                   (X_U1.11)    2.4739                       
+
+(X_U1.12)    2.4739                   (X_U1.13)    -.6666                       
+
+(X_U1.14)    -.6666                   (X_U1.53)    1.3000                       
+
+(X_U1.54)   -1.3000                   (X_U1.90) 47.56E-06                       
+
+(X_U1.91)   25.0000                   (X_U1.92)  -25.0000                       
+
+(X_U1.99)    0.0000                   (X_U2.10)    -.6669                       
+
+(X_U2.11)    2.4739                   (X_U2.12)    2.4739                       
+
+(X_U2.13)    -.6666                   (X_U2.14)    -.6666                       
+
+(X_U2.53)    1.3000                   (X_U2.54)   -1.3000                       
+
+(X_U2.90) 47.60E-06                   (X_U2.91)   25.0000                       
+
+(X_U2.92)  -25.0000                   (X_U2.99)    0.0000                       
+
+(X_U3.10)    -.6657                   (X_U3.11)    2.4739                       
+
+(X_U3.12)    2.4739                   (X_U3.13)    -.6654                       
+
+(X_U3.14)    -.6654                   (X_U3.53)    1.3000                       
+
+(X_U3.54)   -1.3000                   (X_U3.90)-17.67E-06                       
+
+(X_U3.91)   25.0000                   (X_U3.92)  -25.0000                       
+
+(X_U3.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.122E-03
+    V_V2        -2.125E-03
+    V_V5        -1.495E-08
+    X_U1.VB     -4.026E-12
+    X_U1.VC      1.299E-12
+    X_U1.VE      1.302E-12
+    X_U1.VLIM    4.756E-08
+    X_U1.VLP    -2.500E-11
+    X_U1.VLN    -2.500E-11
+    X_U2.VB     -4.026E-12
+    X_U2.VC      1.299E-12
+    X_U2.VE      1.302E-12
+    X_U2.VLIM    4.760E-08
+    X_U2.VLP    -2.500E-11
+    X_U2.VLN    -2.500E-11
+    X_U3.VB     -4.355E-15
+    X_U3.VC      1.301E-12
+    X_U3.VE      1.301E-12
+    X_U3.VLIM   -1.767E-08
+    X_U3.VLP    -2.500E-11
+    X_U3.VLN    -2.500E-11
+
+    TOTAL POWER DISSIPATION   1.06E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/19/23 18:20:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Cadence\Projects\Skola\Projektkurs\InsAmp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        7.16
+  Total job time (using Solver 1)   =         .23
+
