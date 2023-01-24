@@ -2,3 +2,9 @@ All the Hardware design and some simulation files.
 The MCU_prototype is fully done with layout
 Electrodes_proto is not done in layout preferably it should be done on a 4 layer PCB
 but the capabilitys to create a PCB at the schools facilities makes it so It needs to be layed out using only two layer which makes it tough due to all power pins (V+ V-)
+
+In the Simlulations:
+Antialiasing,InsAmp,RCfilter is the main steps simulation individually
+RC_amp_LP is the steps togheter
+IN all sims not the exact components used in the circuitry have a simulation model so an equivalent part is used
+but due to this the simulations are not 100% reliable and that why the main testing has been done in the lab.
