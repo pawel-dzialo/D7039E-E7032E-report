@@ -1,0 +1,12 @@
+/home/pawel/com/target/debug/deps/serialport-eb2aa35b6ac3f7e9.rmeta: /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/lib.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/mod.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/enumerate.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/error.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/ioctl.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/poll.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/termios.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/tty.rs
+
+/home/pawel/com/target/debug/deps/serialport-eb2aa35b6ac3f7e9.d: /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/lib.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/mod.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/enumerate.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/error.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/ioctl.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/poll.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/termios.rs /home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/tty.rs
+
+/home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/lib.rs:
+/home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/mod.rs:
+/home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/enumerate.rs:
+/home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/error.rs:
+/home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/ioctl.rs:
+/home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/poll.rs:
+/home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/termios.rs:
+/home/pawel/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/tty.rs:

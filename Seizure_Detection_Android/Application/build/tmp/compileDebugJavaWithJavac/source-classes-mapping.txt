@@ -1,0 +1,51 @@
+com/example/android/bluetoothadvertisements/StartGameDialogFragment.java
+ com.example.android.bluetoothadvertisements.StartGameDialogFragment
+ com.example.android.bluetoothadvertisements.StartGameDialogFragment$1
+ com.example.android.bluetoothadvertisements.StartGameDialogFragment$2
+com/example/android/bluetoothadvertisements/databinding/ActivityMainBinding.java
+ com.example.android.bluetoothadvertisements.databinding.ActivityMainBinding
+com/example/android/bluetoothadvertisements/BuildConfig.java
+ com.example.android.bluetoothadvertisements.BuildConfig
+com/example/android/bluetoothadvertisements/databinding/ActivityFullscreenBinding.java
+ com.example.android.bluetoothadvertisements.databinding.ActivityFullscreenBinding
+com/example/android/bluetoothadvertisements/databinding/ListitemScanresultBinding.java
+ com.example.android.bluetoothadvertisements.databinding.ListitemScanresultBinding
+com/example/android/bluetoothadvertisements/databinding/ActivityFullscreen2Binding.java
+ com.example.android.bluetoothadvertisements.databinding.ActivityFullscreen2Binding
+com/example/android/bluetoothadvertisements/DialogHelper.java
+ com.example.android.bluetoothadvertisements.DialogHelper
+com/example/android/bluetoothadvertisements/AdvertiserFragment.java
+ com.example.android.bluetoothadvertisements.AdvertiserFragment
+ com.example.android.bluetoothadvertisements.AdvertiserFragment$1
+com/example/android/bluetoothadvertisements/databinding/FragmentAdvertiserBinding.java
+ com.example.android.bluetoothadvertisements.databinding.FragmentAdvertiserBinding
+com/example/android/bluetoothadvertisements/Constants.java
+ com.example.android.bluetoothadvertisements.Constants
+com/example/android/bluetoothadvertisements/AdvertiserService.java
+ com.example.android.bluetoothadvertisements.AdvertiserService
+ com.example.android.bluetoothadvertisements.AdvertiserService$1
+ com.example.android.bluetoothadvertisements.AdvertiserService$SampleAdvertiseCallback
+com/example/android/bluetoothadvertisements/MainActivity.java
+ com.example.android.bluetoothadvertisements.MainActivity
+ com.example.android.bluetoothadvertisements.MainActivity$1
+ com.example.android.bluetoothadvertisements.MainActivity$10
+ com.example.android.bluetoothadvertisements.MainActivity$11
+ com.example.android.bluetoothadvertisements.MainActivity$12
+ com.example.android.bluetoothadvertisements.MainActivity$2
+ com.example.android.bluetoothadvertisements.MainActivity$3
+ com.example.android.bluetoothadvertisements.MainActivity$4
+ com.example.android.bluetoothadvertisements.MainActivity$5
+ com.example.android.bluetoothadvertisements.MainActivity$6
+ com.example.android.bluetoothadvertisements.MainActivity$7
+ com.example.android.bluetoothadvertisements.MainActivity$8
+ com.example.android.bluetoothadvertisements.MainActivity$9
+ com.example.android.bluetoothadvertisements.Something
+ com.example.android.bluetoothadvertisements.Warning
+com/example/android/bluetoothadvertisements/ScannerFragment.java
+ com.example.android.bluetoothadvertisements.ScannerFragment
+ com.example.android.bluetoothadvertisements.ScannerFragment$1
+ com.example.android.bluetoothadvertisements.ScannerFragment$2
+ com.example.android.bluetoothadvertisements.ScannerFragment$SampleScanCallback
+com/example/android/bluetoothadvertisements/ScanResultAdapter.java
+ com.example.android.bluetoothadvertisements.ScanResultAdapter
+ com.example.android.bluetoothadvertisements.ScanResultAdapter$1

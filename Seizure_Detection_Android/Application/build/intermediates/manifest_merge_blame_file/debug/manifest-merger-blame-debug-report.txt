@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.android.bluetoothadvertisements"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml
+10
+11    <uses-permission
+11-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:7:5-9:38
+12        android:name="android.permission.BLUETOOTH"
+12-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:8:9-52
+13        android:maxSdkVersion="30" />
+13-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:9:9-35
+14    <uses-permission
+14-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:10:5-12:38
+15        android:name="android.permission.BLUETOOTH_ADMIN"
+15-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:11:9-58
+16        android:maxSdkVersion="30" />
+16-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:12:9-35
+17    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+17-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:13:5-73
+17-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:13:22-70
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+18-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:14:5-77
+18-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:14:22-74
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:15:5-77
+19-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:15:22-74
+20    <!--
+21 Needed only if your app makes the device discoverable to Bluetooth
+22         devices.
+23    -->
+24    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+24-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:20:5-78
+24-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:20:22-75
+25    <!--
+26 Needed only if your app communicates with already-paired Bluetooth
+27         devices.
+28    -->
+29    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Needed only if your app uses Bluetooth scan results to derive physical location. -->
+29-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:25:5-76
+29-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:25:22-73
+30    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+30-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:26:5-79
+30-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:26:22-76
+31
+32    <application
+32-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:28:5-50:19
+33        android:allowBackup="true"
+33-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:29:9-35
+34        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+34-->[com.android.support:support-compat:28.0.0] /home/pawel/.gradle/caches/transforms-2/files-2.1/6f81025bcc413a318d3343580ec76047/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+35        android:debuggable="true"
+36        android:icon="@drawable/ic_launcher"
+36-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:30:9-45
+37        android:label="@string/app_name"
+37-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:31:9-41
+38        android:testOnly="true"
+39        android:theme="@style/AppTheme" >
+39-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:32:9-40
+40        <activity
+40-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:33:9-41:20
+41            android:name="com.example.android.bluetoothadvertisements.MainActivity"
+41-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:34:13-41
+42            android:label="@string/app_name" >
+42-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:35:13-45
+43            <intent-filter>
+43-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:36:13-40:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:37:17-69
+44-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:37:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:39:17-77
+46-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:39:27-74
+47            </intent-filter>
+48        </activity>
+49        <!--
+50 Service to handle BLE Advertising - Using a service allows advertising to continue
+51             when the app is no longer on screen in a reliable manner.
+52        -->
+53        <service
+53-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:46:9-49:48
+54            android:name="com.example.android.bluetoothadvertisements.AdvertiserService"
+54-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:47:13-46
+55            android:enabled="true"
+55-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:48:13-35
+56            android:exported="false" />
+56-->/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/AndroidManifest.xml:49:13-37
+57    </application>
+58
+59</manifest>

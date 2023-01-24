@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_advertiser.xml",
+        "source": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/res/layout/fragment_advertiser.xml"
+    },
+    {
+        "merged": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_fullscreen.xml",
+        "source": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/res/layout/activity_fullscreen.xml"
+    },
+    {
+        "merged": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_fullscreen2.xml",
+        "source": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/res/layout/activity_fullscreen2.xml"
+    },
+    {
+        "merged": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/listitem_scanresult.xml",
+        "source": "/home/pawel/AndroidStudioProjects/BluetoothAdvertisements/Application/src/main/res/layout/listitem_scanresult.xml"
+    }
+]
