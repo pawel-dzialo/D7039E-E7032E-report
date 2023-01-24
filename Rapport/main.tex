@@ -18,17 +18,22 @@
 
 \documentclass{article}
 \usepackage[utf8]{inputenc} % - Defines what coding LaTeX uses. Use this one.
-\usepackage[swedish]{babel}
+\usepackage[english]{babel}
 \usepackage{graphicx} % - Package for including images in the document.
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{amsmath}
 \usepackage{float} % För att lägga saker exakt rätt, använd taggen [H] istället för [h] eller [h!]
 \usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{csquotes}
 \graphicspath{ {Images/} } % - Path to where the images are located
 \usepackage{hyperref} % - Package for including hyperlinks in the document.
 \usepackage[backend=bibtex,style=numeric,bibencoding=ascii]{biblatex}
  % - Package for the bibliography ("referenser").
 \addbibresource{references.bib} % - From where the references are taken
 \setlength\parindent{0pt} % - Tar bort indentering vid enter
+\usepackage{svg}
 
 % - Can be good to structure the .tex file by dividing the document using commenting. For longer documents you can create separate .tex files for each section and then include these using \import(filename.tex). For the exercise in this course it is suggested that you write everything in this main.tex file. You can of course try using \import if you like. - %
 
@@ -36,12 +41,16 @@
 % -               Title and affiliation                    - %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Epileptic prediction cap:\\
-\LaTeX -mall}
+\title{Designing an Epileptic Prediction Cap\\
+\textit{Hardware, Software and Algorithms}}
 
-\author{\includegraphics[width=0.6\textwidth]{images/hund.jpg} \\ \\ \\
+\author{\includegraphics[width=0.6\textwidth]{images/front.png} \\ \\ \\
 Author \\
-{\tt Author @student.ltu.se} \\
+{\tt Johan Axenhag johaxe-4@student.ltu.se} \\
+{\tt Fabian Danielsson fabdan-8@student.ltu.se} \\
+{\tt Pawel Dzialo pawdzi-7@student.ltu.se} \\
+{\tt Johan Lindqvist ojaili-8@student.ltu.se} \\
+{\tt Michelle von Rosen micvon-8@student.ltu.se} \\
 \\Department of Computer Science, Electrical and Space Engineering \\ \\
 \includegraphics[width=0.2\textwidth]{images/ltu_swe.jpg}}
 % MG: Bilder på första sidan är bäst att lägga i "author"-
@@ -115,6 +124,7 @@ Author \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -                       Theory                           - %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Theory}
 \input{text/4-Theory.tex}
 
@@ -136,14 +146,22 @@ Author \\
 
 
 
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -                      Summary                           - %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Discussion and Conclusions}
 \input{text/7-Discussion and Conclussions.tex}
-
-
+\newpage
+\appendix
+%\section{Team members}
+%\input{text/A-Team members.tex}
+\section{Circuits}\label{circpart}
+\input{text/B-Circuits.tex}
+\section{Components list and cost}
+\input{text/C-Components list.tex}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -                    Bibliography                        - %
@@ -166,6 +184,7 @@ Author \\
 % upp i texten och sortera referenslistan i nummerordning.
 % Exempel: ... som Öqvist [3] har funnit, och referensen Öqvist dyker då upp som nummer tre i referenslistan.
 % En guide för referenser finns här: http://libguides.ltu.se/skrivaoreferera
+% hej
 
 \end{document}
 

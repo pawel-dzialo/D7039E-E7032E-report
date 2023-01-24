@@ -5,3 +5,70 @@
 
 %Diskutera felkällor och osäkerheter.
 %Det är även lämpligt att i denna del avsluta med förslag och rekommendationer på fortsatta studier och undersökningar i ämnet. Man kan dela upp diskussion, slutsatser och framtida studier i fristående kapitel.
+
+%False positives in this context can be accepted as long as the frequency is lower than 1 per day, depending on the frequency in the patients seizures, since if the seizures are frequent and dangerous enough the drawback of sitting down unnecessarily might be worth it.
+
+\subsection{Spike detection}
+One of the main issues during this project was the high degree of complexity of the brain, first of all, the behavior of the brain is highly individual, no individual's EEG signals are identical to any others. Furthermore, it can vary from day to day due to the irregularities of cognitive and physiological behavior, humans are after all not robots. Another issue was understanding the relationship between spikes in EEG signals and epileptic seizure activity, since the consensus of this seems to be unclear (insert reference of the different views here), it is therefore difficult coming from a pure engineering background, which can explain the varying result of the model-based response.
+
+All of the model-based approaches had a problem with a high number of false positives as seen in tables(\ref{Der1}-\ref{Freq3}). A certain number of false positives might be acceptable since it would only result in someone sitting down unnecessarily. This stands in relation to the severity of the seizures and their overall frequency, but a false positive rate of 1/week might be regarded as a reasonable bar. 
+%Since the model based methods did not clear this, it is clear that this needs to be the main focus of these strategies.
+
+It was also increasingly apparent during the design and research process that the individuality between the subject's EEG brain signals is substantial. Therefore, it might be unavoidable to make a wearable with a good prediction that is not also tunable to the person using it. This might hopefully reduce the False positive rate.
+
+%Regarding spike detection, one approach might be to use an automatic spike extracting algorithm that averages the signal, similar to the one used in the matching filter described in this project. That matching filter is based on the one described in the paper (matching and pattern report). However, the difference between the two is that the one in the paper uses $10-20$ spikes picked by a neuroscientist. In contrast, ours uses an automatic approach with minimum human input due to the lack of a neuroscientist in the project. It might be an impossible task since individuality likely hinders automatic extraction.\\
+
+%It might be possible that adjusting the threshold for how many spikes per window is regarded as a seizure is easier to adjust since it is straightforward to detect a seizure when it happens. 
+
+Tuning the spike frequency method is easy to automate since the frequency is substantially higher in the ictal state. Labeling seizures whit this method is almost foolproof. A tuning method can, therefore, gather the data and take the max spike rate that occurred $20$ min before the registered seizure. 
+
+%An algorithm for adjusting this threshold can adjust the threshold for the alarm to be that value reached approximately $20$ minutes before the registered seizure. This would likely mean that the patient would have to have an induced seizure first to tune the device. Another way that is already implemented is to gather all the values of the inter-ictal states spike/window during a week. Then use the maximum of this.
+
+Regarding the Derivative based approach, tuning is a tricky problem. This is due to the difficulty of having both an upper and lower threshold. Determining the maximum flatness of an inter-ictal state requires more precision than simple max spikes per window threshold.
+
+The 4 criteria that can be tuned here are:
+\begin{itemize}
+    \item The time segments length.
+    \item The window length.
+    \item The interval of the derivative threshold. Both upper and lower.
+\end{itemize}
+
+%4 criteria can be tuned here are:
+%- The time segments length.
+%- The window length.
+%- The interval of the derivative threshold. Both upper and lower.
+
+It is of note here that since we need to calculate a mean, there has to be a long enough time segment to be able to observe the behavior. But it cannot be so long as to not see the relevant behavior. Further analysis of the measured behavior would be needed to tune this effectively. It might be possible to combine this method whit the spike frequency method. Maybe introduce a criterion where both have to be triggered for a seizure to be predicted. Again this is based on the simple principle of "more information means better prediction". 
+
+%% flyttad från under cnn future ideas
+To summarize, all the model-based approaches probably need to track more variables. So a future idea might be to analyze the behavior of the spike and wave pattern close to seizures, such as the change in the duration of the spike and the height of the spike, in such a way it might be possible to get more information to base decisions on.
+
+%We believe that future model-based approaches need to track more variables, such as the change in the duration of the spike and the height of the spike, and with that get a more clear picture of how this correlates with a seizure onset. If an FPGA can be programmed, it may also be a good idea to try and use wavelet analysis to try and capture more complex behaviour.\\
+
+\subsection{CNN}
+The results from figures (\ref{real_both}) and (\ref{other_both}) showcase the difficulty of creating a generalized network. We had heard that EEG signals are highly individualized early on, and this comparison as well as many other unmentioned tests reinforces that statement. Furthermore, the fact that the network seems to predict entire test occasions rather than finding the pre-ictal state could be a concern. However, that concern is lessened by the fact that the data from the inter-ictal state mostly comes from occasions where no seizure occurred, and that during the occasions a seizure occurred, an individual could already be in a pre-ictal state when the test starts. \\
+
+Regardless, we know that the result on the test set is around 75\%, which means that the network successfully adapts to the data, which means that at least something is working as intended. Still, it is unclear to us exactly what the network adapts to. It could be the pre-ictal state, but it could also be the specific noise generated when wearing the helmet in a certain way, or even the way images are cropped to overlap seconds in certain cases, catching machine noise in a different way. It is very unfortunate that no working preprocessing methods could be applied in time since that likely would have improved the purity of the dataset greatly, and through that also the performance and certainty of the neural network. \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%The problem with both spike detection methods is numerous false positives, and a seizure seems to be relatively hard to miss.
+
+
+
+\subsection{Preprocessing}
+It was surprising to find that a widely used algorithm such as ICA was so difficult to implement on your own. Seldom do research team write their own ICA code but use pre-made libraries, for example, MNE for python. These code libraries also use their own signal library to be able to automatically extract artifacts. Without such an automatic process and without a large amount of data to create such an artifact signal library (since the behavior of the pre-ictal phase is still very much still unclear) a "real-time" ICA pre-processing could not be made. The code library works on a low level with its fast algorithm and use of C code, but it gives an output of extracted components. It does not know which one is an artifact which is why either someone experienced in EEG signals needs to separate them beforehand, to be used in the creation of a data set or automatically by comparing with a, as previously mentioned, artifact component library. So for future use, it is recommended to either use the well-documented MNE library or to continue by making an artifact component library and code that uses this library to extract the components given by the ICA library already coded. It should however be noted here that this since the nature of a pre-ictal signal still is unclear, and independent component analysis might still turn out to be unfit for removing artifacts. From the data given in this trial and several recommendation's scientists, artifacts need to be removed somehow, even for a signal from epileptic seizures. Otherwise, there is too much contamination to be able to apply a prediction, especially when brain signals already are very individual. But even with changing the artifact removal algorithm, the general approach in this paper can be well followed for an individually tunable prediction cap.
+
+\subsection{Hardware}
+The main struggle was finding components suitable for EEG measurement, mainly finding suitable ADCs. One challenge is to find high-resolution ADCs with low noise. One way to possibly mitigate this issue could be by using an oversampling method to enhance the resolution of the ADCs, as described in \cite{AtmelDeci} by Atmel. Doing this creates a new challenge in that the amount of data becomes too much for the MCU to handle. This could be solved through decimation by, for example, a CIC filter implemented in the software. Unfortunately, we didn't have time to test this out on our process.\\
+
+The amplification and filtering designs worked well during testing. Even though we didn't have time to put together the complete circuit, the tests we ran on individual circuits seemed to indicate that the complete design should work. The main challenge was finding good OP amps for the amplifier. The OPA376 from Texas instrument has such low noise specifications that they shouldn't be an issue since, for example, as mentioned, the thermal noise will most likely be in the same order of magnitude or larger. 
+
+When performing the filtering and classification tests on-chip, we quickly noticed that the microcontroller barely kept up with the amount of data it was being fed. For that reason, another improvement could be separating the data collection/filtering and classification into separate MCUs, allowing for more precise filtering and classification.
+
+\subsection{Software}
+The on-chip software performed fine as far as the design criteria go. However, all of the collected data was thrown away once the classification is made. A possible improvement would be doing something with the data, either uploading it to the cloud for further training in the classification methods or giving the user access to it via some API from the Android app.

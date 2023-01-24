@@ -1,3 +1,8 @@
-Sammanfattning på engelska.
+Epileptic seizures are a neurological disorder that affects surprisingly many. In this paper, an engineering approach is taken to create a prediction device. This device's goal was to predict a seizure within a 2-minute time frame while being wearable. This project was divided into three parts; EEG signal collecting hardware as well as Bluetooth communication, software that removes artifacts, and prediction algorithms that together form the complete design. Prediction algorithms were further divided into two, a spike detection and a CNN detection approach with varying results. %WRITE COMMENTS ABOUT RESULTS; ONE-TWO SENTENCE
+The brain signal preprocessing was completed so that digital filters and a C library for independent components analysis were made in C. However the lack of proper experience in the neurological field made the artifact removal un-tunable for proper artifact removal.
+The hardware implementation was found to be possible, but difficult because of the current silicon shortage affecting the supply chains of required components. A working prototype of an electrode along with the required amplification, filtering, and analog-to-digital conversion, and a prototype of the pre-processing, classification, and user interface device were created successfully. Testing software was also created for verifying the correctness of each data collection step in the classification procedure.
+%OTHER RESULTS
+In the end, a finished cap design was not achieved but rather a collection of approaches that can be used both as a foundation and also as lessons on what to avoid for further projects. The two greatest lesson's from this project, that should be considered if further studied, is that brain waves are extremely individual and how important a clear project definition is for interdisciplinary projects such as this one.
 
 % Svenska för labrapporter.
+% 
