@@ -1,0 +1,4 @@
+All the Hardware design and some simulation files.
+The MCU_prototype is fully done with layout
+Electrodes_proto is not done in layout preferably it should be done on a 4 layer PCB
+but the capabilitys to create a PCB at the schools facilities makes it so It needs to be layed out using only two layer which makes it tough due to all power pins (V+ V-)
