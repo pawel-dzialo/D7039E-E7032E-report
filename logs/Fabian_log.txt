@@ -127,6 +127,10 @@ Rest of the week: Waiting for the code to be rewritten to fit the same structure
 2022-12-12 While waiting for the preprocessing I tried to improve the results of the "real" test, but the results are pretty weird. I might have a model that predicts a seizure, as it seems to always guess pre-ictal when a seizure is had on the same session, and always guess inter-ictal on sessions when no seizure was had. I will have to investigate this further.
 
 
+Christmas, New Years, and early January: Spent days on implementing and bugfixing the preprocessing. Turns out the methods don't work for what we are doing, so everything I did there is scrapped. Also wrote my parts of the report and of the presentation. The final version of the CNN is slightly different than in December, but its exact structure makes no real difference.
+
+
+
 
 
 
